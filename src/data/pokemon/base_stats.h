@@ -256,7 +256,7 @@ const struct BaseStats gBaseStats[] =
             .type2 = TYPE_ROCK,
             .abilities = {ABILITY_TORRENT, ABILITY_MEGA_LAUNCHER, ABILITY_RAIN_DISH},
         #else
-               .type1 = TYPE_WATER,
+            .type1 = TYPE_WATER,
             .type2 = TYPE_WATER,
             .abilities = {ABILITY_TORRENT, ABILITY_TORRENT, ABILITY_RAIN_DISH},
         #endif        
