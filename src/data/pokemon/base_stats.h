@@ -465,13 +465,13 @@ const struct BaseStats gBaseStats[] =
             .baseAttack    = 50,
             .baseSpAttack  = 60,
             .type1 = TYPE_FLYING,
-            .type2 = TYPE_FLYING
+            .type2 = TYPE_FLYING,
             .abilities = {ABILITY_NO_GUARD, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS},
         #else
             .baseAttack    = 60,
             .baseSpAttack  = 50,
             .type1 = TYPE_NORMAL,
-            .type2 = TYPE_FLYING
+            .type2 = TYPE_FLYING,
             .abilities = {ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS},
         #endif
         .catchRate = 120,
@@ -497,13 +497,13 @@ const struct BaseStats gBaseStats[] =
             .baseAttack    = 70,
             .baseSpAttack  = 95,
             .type1 = TYPE_FLYING,
-            .type2 = TYPE_FLYING
+            .type2 = TYPE_FLYING,
             .abilities = {ABILITY_NO_GUARD, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS},
         #else
             .baseAttack    = 80,
             .baseSpAttack  = 70,
             .type1 = TYPE_NORMAL,
-            .type2 = TYPE_FLYING
+            .type2 = TYPE_FLYING,
             .abilities = {ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS},
         #endif
         .catchRate = 45,
