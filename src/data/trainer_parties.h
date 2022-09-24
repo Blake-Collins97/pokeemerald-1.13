@@ -17402,7 +17402,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = { // Inver
     .lvl = 1,
     .species = SPECIES_EXEGGUTOR,
     .heldItem = ITEM_EXPERT_BELT,
-    .ability = , // Chlorophyll
+    .ability = 0, // Chlorophyll
     .spread = SPREAD_31_IV_HP_SPATK_MODEST,
     .moves = MOVE_PSYCHIC, MOVE_SLUDGE_BOMB, MOVE_SOLAR_BEAM, MOVE_TRICK_ROOM
     },
