@@ -9350,7 +9350,7 @@ static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
     .species = SPECIES_FLAREON,
     .heldItem = ITEM_LIFE_ORB,
     .ability = 2, // Guts
-    .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT
+    .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_FLARE_BLITZ, MOVE_DOUBLE_EDGE, MOVE_IRON_TAIL, MOVE_QUICK_ATTACK
     },
     {
@@ -17397,7 +17397,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = { // Inver
     .ability = 2, // Drought
     .spread = SPREAD_31_IV_HP_ATK_BRAVE,
     .moves = MOVE_FLARE_BLITZ, MOVE_ROCK_SLIDE, MOVE_ZEN_HEADBUTT, MOVE_ROCK_POLISH
-    }
+    },
     {
     .lvl = 1,
     .species = SPECIES_EXEGGUTOR,
@@ -20084,7 +20084,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     .ability = 0, // Intimidate -> Aerilate
     .spread = SPREAD_31_IV_ATK_SPEED_NAIVE,
     .moves = MOVE_HYPER_VOICE, MOVE_HYDRO_PUMP, MOVE_FIRE_BLAST, MOVE_DRAGON_CLAW
-    }
+    },
     {
     .lvl = 1,
     .species = SPECIES_SERPERIOR,
@@ -20150,14 +20150,14 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     .heldItem = ITEM_LEFTOVERS,
     .ability = 1, // Hydration
     .spread = SPREAD_31_IV_HP_SPATK_QUIET,
-    .moves = MOVE_HYDRO_PUMP MOVE_DRAGON_PULSE, MOVE_THUNDER, MOVE_REST
+    .moves = MOVE_HYDRO_PUMP, MOVE_DRAGON_PULSE, MOVE_THUNDER, MOVE_REST
     },
     {
     .lvl = 2,
     .species = SPECIES_SWAMPERT,
     .heldItem = ITEM_LIFE_ORB,
     .ability = 2, // Swift Swim
-    .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT
+    .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_WATERFALL, MOVE_ICE_PUNCH, MOVE_HIGH_HORSEPOWER, MOVE_ROCK_SLIDE
     },
     {
