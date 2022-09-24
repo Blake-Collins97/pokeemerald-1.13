@@ -2477,7 +2477,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .lvl = -3,
     .species = SPECIES_GEODUDE,
     .heldItem = ITEM_CHESTO_BERRY,
-    .ability = 2, // Sand Stream
+    .ability = 0, // Sturdy
     .spread = SPREAD_ROXANNE_ONE_MON,
     .moves = MOVE_ROCK_TOMB, MOVE_STEALTH_ROCK, MOVE_MAGNITUDE, MOVE_REST
     },
