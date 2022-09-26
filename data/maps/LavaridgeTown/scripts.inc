@@ -405,8 +405,8 @@ LavaridgeTown_Text_PokemonNippedBackside: @ 81EAEE1
 	.string "A Pokémon nipped my backside!$"
 
 LavaridgeTown_Text_OhYouLikeHotSprings: @ 81EAF4E
-	.string "Flannery is a strong trainer,\p"
-	.string "She relies on the power of the sun\n"
+	.string "Flannery is a strong trainer,\n"
+	.string "She relies on the power of the sun\p"
 	.string "It is said there is a pokemon in/l"
 	.string "Meteor Falls that can bring rain.$"
 
