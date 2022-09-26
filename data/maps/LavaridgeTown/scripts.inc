@@ -407,7 +407,7 @@ LavaridgeTown_Text_PokemonNippedBackside: @ 81EAEE1
 LavaridgeTown_Text_OhYouLikeHotSprings: @ 81EAF4E
 	.string "Flannery is a strong trainer,\n"
 	.string "She relies on the power of the sun\p"
-	.string "It is said there is a pokemon in/l"
+	.string "It is said there is a pokemon in\l"
 	.string "Meteor Falls that can bring rain.$"
 
 LavaridgeTown_Text_BatheInHotSpringsEveryDay: @ 81EAF9B
