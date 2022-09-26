@@ -405,9 +405,10 @@ LavaridgeTown_Text_PokemonNippedBackside: @ 81EAEE1
 	.string "A Pokémon nipped my backside!$"
 
 LavaridgeTown_Text_OhYouLikeHotSprings: @ 81EAF4E
-	.string "Oh, you like hot springs, do you?\p"
-	.string "That's surprising for one as young\n"
-	.string "as you.$"
+	.string "Flannery is a strong trainer,\p"
+	.string "She relies on the power of the sun\n"
+	.string "It is said there is a pokemon in/l"
+	.string "Meteor Falls that can bring rain.$"
 
 LavaridgeTown_Text_BatheInHotSpringsEveryDay: @ 81EAF9B
 	.string "I bathe in the hot springs every day.\p"
