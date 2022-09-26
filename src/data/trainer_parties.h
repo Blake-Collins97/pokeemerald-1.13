@@ -17370,7 +17370,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = { // Inver
     .lvl = 2,
     .species = SPECIES_LUNATONE,
     .heldItem = ITEM_GHOST_GEM,
-    .ability = 2, // Drizzle
+    .ability = 1, // Drizzle
     .spread = SPREAD_31_IV_HP_SPATK_QUIET,
     .moves = MOVE_POWER_GEM, MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM, MOVE_SURF
     },
@@ -17394,7 +17394,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = { // Inver
     .lvl = 2,
     .species = SPECIES_SOLROCK,
     .heldItem = ITEM_WEAKNESS_POLICY,
-    .ability = 2, // Drought
+    .ability = 1, // Drought
     .spread = SPREAD_31_IV_HP_ATK_BRAVE,
     .moves = MOVE_FLARE_BLITZ, MOVE_ROCK_SLIDE, MOVE_ZEN_HEADBUTT, MOVE_ROCK_POLISH
     },
