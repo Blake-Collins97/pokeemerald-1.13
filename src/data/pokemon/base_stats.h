@@ -9071,7 +9071,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_LUNATONE] =
     {
         .baseHP        = 90,
-        .baseAttack    = 55,
+        .baseAttack    = 85,
         .baseDefense   = 65,
         .baseSpeed     = 70,
         #ifdef REBALANCED_VERSION
@@ -9094,7 +9094,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_FAST,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_DRIZZLE},
+        .abilities = {ABILITY_LEVITATE, ABILITY_DRIZZLE, ABILITY_TORRENT},
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },
@@ -9103,7 +9103,7 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 90,
         .baseSpeed     = 70,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 85,
         .baseSpDefense = 65,
         #ifdef REBALANCED_VERSION
             .baseAttack    = 125,
@@ -9125,7 +9125,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_FAST,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_DROUGHT},
+        .abilities = {ABILITY_LEVITATE, ABILITY_DROUGHT, ABILITY_BLAZE},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
