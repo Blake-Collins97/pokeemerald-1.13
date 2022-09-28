@@ -1362,7 +1362,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_BOUFFALANT"
+                "species": "SPECIES_TAUROS"
               },
               {
                 "min_level": 14,
@@ -1382,12 +1382,12 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SKARMORY"
+                "species": "SPECIES_WEEZING"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_MIENFOO"
+                "species": "SPECIES_ARBOK"
               },
               {
                 "min_level": 16,
@@ -4202,7 +4202,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_DODRIO"
+                "species": "SPECIES_CHANSEY"
               },
               {
                 "min_level": 25,
@@ -4222,7 +4222,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_LURANTIS"
+                "species": "SPECIES_DONPHAN"
               },
               {
                 "min_level": 24,
@@ -4242,7 +4242,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_TANGELA"
+                "species": "SPECIES_HARIYAMA"
               }
             ]
           },
@@ -4347,7 +4347,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_AUDINO"
+                "species": "SPECIES_BLISSEY"
               },
               {
                 "min_level": 3,
@@ -12298,22 +12298,22 @@
               {
                 "min_level": 10,
                 "max_level": 12,
+                "species": "SPECIES_SNOVER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_SNOVER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
                 "species": "SPECIES_SPHEAL"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_VANILLITE"
-              },
-              {
-                "min_level": 10,
-                "max_level": 12,
-                "species": "SPECIES_SPHEAL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 12,
-                "species": "SPECIES_VANILLITE"
+                "species": "SPECIES_CUBCHOO"
               },
               {
                 "min_level": 10,
