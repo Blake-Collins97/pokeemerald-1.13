@@ -457,7 +457,32 @@ MtChimney_EventScript_MeteoriteMachine:: @ 822F0E4
 	goto_if_eq MtChimney_EventScript_LeaveMeteoriteAlone
 	msgbox MtChimney_Text_PlayerRemovedMeteorite, MSGBOX_DEFAULT
 	giveitem ITEM_METEORITE
-	setflag FLAG_RECEIVED_METEORITE
+	setflag FLAG_RECEIVED_METEORITE 
+		braillemessage SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth
+		waitbuttonpress
+		closebraillemessage
+		goto_if_eq SealedChamber_InnerRoom_EventScript_NoEffect
+		fadeoutbgm 0
+		playse SE_TRUCK_MOVE
+		special DoSealedChamberShakingEffect1
+		waitstate
+		delay 40
+		special DoSealedChamberShakingEffect2
+		waitstate
+		playse SE_DOOR
+		delay 40
+		special DoSealedChamberShakingEffect2
+		waitstate
+		playse SE_DOOR
+		delay 40
+		special DoSealedChamberShakingEffect2
+		waitstate
+		playse SE_DOOR
+		delay 40
+		msgbox gText_DoorOpenedFarAway, MSGBOX_DEFAULT
+		closemessage
+		fadeinbgm 0
+		setflag FLAG_REGI_DOORS_OPENED
 	releaseall
 	end
 
