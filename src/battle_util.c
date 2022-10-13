@@ -7988,10 +7988,6 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
     case EFFECT_NATURAL_GIFT:
         basePower = gNaturalGiftTable[ITEM_TO_BERRY(gBattleMons[battlerAtk].item)].power;
         break;
-    case EFFECT_WAKE_UP_SLAP:
-        if (gBattleMons[battlerDef].status1 & STATUS1_SLEEP || GetBattlerAbility(battlerDef) == ABILITY_COMATOSE)
-            basePower *= 2;
-        break;
     case EFFECT_SMELLINGSALT:
         if (gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS)
             basePower *= 2;
@@ -8726,6 +8722,13 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
         defStat = gBattleMons[battlerDef].spDefense;
         defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
         usesDefStat = FALSE;
+    }
+    // force palm is a special version of psyshock (using wake up slap effect)
+    if (gBattleMoves[move].effect == EFFECT_WAKE_UP_SLAP || IS_MOVE_SPECIAL(move)) // uses sp.def stat instead of defense
+    {
+        defStat = def;
+        defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
+        usesDefStat = TRUE;
     }
     else // is special
     {

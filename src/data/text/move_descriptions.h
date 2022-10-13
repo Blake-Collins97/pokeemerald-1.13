@@ -50,8 +50,8 @@ static const u8 sGuillotineDescription[] = _(
     "that may cause fainting.");
 
 static const u8 sRazorWindDescription[] = _(
-    "A 2-turn move that strikes\n"
-    "the foe on the 2nd turn.");
+    "Unleashes powerful winds. Has\n"
+    "a high critical-hit ratio.");
 
 static const u8 sSwordsDanceDescription[] = _(
     "A fighting dance that\n"
@@ -771,7 +771,7 @@ static const u8 sMudSlapDescription[] = _(
 
 static const u8 sOctazookaDescription[] = _(
     "Fires a lump of ink to\n"
-    "damage and cut accuracy.");
+    "damage and cut speed.");
 
 static const u8 sSpikesDescription[] = _(
     "Sets spikes that hurt a \n"
@@ -1602,8 +1602,8 @@ static const u8 sFLARE_BLITZDescription[] = _(
     "foe. Also hurts the user.");
 
 static const u8 sFORCE_PALMDescription[] = _(
-    "A shock wave attack that\n"
-    "may paralyze the foe.");
+    "the users punches create waves\n"
+    "that inflict special damage.");
 
 static const u8 sAURA_SPHEREDescription[] = _(
     "Attacks with an aura blast\n"

@@ -4615,10 +4615,6 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         if (gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS)
             score += 2;
         break;
-    case EFFECT_WAKE_UP_SLAP:
-        if (gBattleMons[battlerDef].status1 & STATUS1_SLEEP)
-            score += 2;
-        break;
     case EFFECT_REVENGE:
         if (!(gBattleMons[battlerDef].status1 & STATUS1_SLEEP)
           &&  !(gBattleMons[battlerDef].status2 & (STATUS2_INFATUATION | STATUS2_CONFUSION)))
