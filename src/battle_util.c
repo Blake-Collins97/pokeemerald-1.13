@@ -8726,9 +8726,9 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
     // force palm is a special version of psyshock (using wake up slap effect)
     if (gBattleMoves[move].effect == EFFECT_WAKE_UP_SLAP || IS_MOVE_SPECIAL(move)) // uses sp.def stat instead of defense
     {
-        defStat = def;
+        defStat = gBattleMons[battlerDef].spDefense;
         defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
-        usesDefStat = TRUE;
+        usesDefStat = FALSE;
     }
     else // is special
     {
