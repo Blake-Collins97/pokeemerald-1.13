@@ -64,10 +64,10 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar:: @ 823584D
 CaveOfOrigin_B1F_Text_WallaceStory: @ 823586E
 	.string "Ah, so you are {PLAYER}{KUN}?\n"
 	.string "I've heard tales of your exploits.\p"
-	.string "My name is Wallace.\p"
+	.string "My name is Blake.\p"
 	.string "I was once the Gym Leader of\n"
 	.string "Sootopolis, but something came up.\p"
-	.string "So now, I've entrusted my mentor Juan\n"
+	.string "So now, I've entrusted my sister Sharni\n"
 	.string "with the Gym's operation.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
@@ -86,19 +86,19 @@ CaveOfOrigin_B1F_Text_WallaceStory: @ 823586E
 	.string "Rayquaza's whereabouts…$"
 
 CaveOfOrigin_B1F_Text_WhereIsRayquaza: @ 8235ACE
-	.string "Wallace: {PLAYER}{KUN}, do you perhaps\n"
+	.string "Blake: {PLAYER}{KUN}, do you perhaps\n"
 	.string "know where Rayquaza is now?\p"
 	.string "If you do, please tell me.$"
 
 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin: @ 8235B23
-	.string "Wallace: The Cave of Origin?\p"
+	.string "Blake: The Cave of Origin?\p"
 	.string "But that's right here!\n"
 	.string "I need you to do better than that!\p"
 	.string "Please, I need you to think about\n"
 	.string "where Rayquaza might be right now.$"
 
 CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat: @ 8235BBF
-	.string "Wallace: Mt. Pyre?\p"
+	.string "Blake: Mt. Pyre?\p"
 	.string "But when I met the old lady there\n"
 	.string "earlier, she made no mention of it.\p"
 	.string "I very much doubt that the old lady\n"
@@ -107,12 +107,12 @@ CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat: @ 8235BBF
 	.string "more carefully for me?$"
 
 CaveOfOrigin_B1F_Text_CantYouRememberSomehow: @ 8235C99
-	.string "Wallace: Huh? You don't remember?\n"
+	.string "Blake: Huh? You don't remember?\n"
 	.string "Hmm… That's a problem…\p"
 	.string "Can't you remember somehow?$"
 
 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar: @ 8235CEE
-	.string "Wallace: The Sky Pillar?\p"
+	.string "Blake: The Sky Pillar?\p"
 	.string "That's it!\n"
 	.string "It must be the Sky Pillar!\p"
 	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"

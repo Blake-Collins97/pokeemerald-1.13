@@ -2224,16 +2224,16 @@ MatchCall_Text_TateLiza4:: @ 82B31CD
 	.string "Liza: We could all battle again!$"
 
 MatchCall_Text_Juan1:: @ 82B3249
-	.string "Juan: Hmm…\n"
+	.string "Sharni: Hmm…\n"
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
-	.string "encountered Wallace.\p"
+	.string "trained with Blake.\p"
 	.string "Perhaps you are a genius who may\n"
-	.string "yet surpass Wallace!$"
+	.string "yet surpass us both!$"
 
 MatchCall_Text_Juan2:: @ 82B32EC
-	.string "Juan: Fufu… {PLAYER}{KUN}…\n"
+	.string "Sharni: Fufu… {PLAYER}{KUN}…\n"
 	.string "You've finally achieved your goal.\p"
 	.string "My eye for appraising talent wasn't\n"
 	.string "mistaken…\p"
@@ -2242,14 +2242,14 @@ MatchCall_Text_Juan2:: @ 82B32EC
 	.string "of power and prestige.$"
 
 MatchCall_Text_Juan3:: @ 82B33AA
-	.string "Juan: Hoho… {PLAYER}{KUN}…\p"
+	.string "Sharni: Hoho… {PLAYER}{KUN}…\p"
 	.string "Our Sootopolis Gym has finally\n"
 	.string "reopened.\p"
 	.string "If you wish to see me, you are\n"
 	.string "welcome to visit anytime.$"
 
 MatchCall_Text_Juan4:: @ 82B341E
-	.string "Juan: {PLAYER}{KUN}…\p"
+	.string "Sharni: {PLAYER}{KUN}…\p"
 	.string "Like the finest music, the battles\n"
 	.string "we wage together strike chords\l"
 	.string "of inspiration in my heart…\p"
@@ -2293,7 +2293,7 @@ MatchCall_Text_Drake:: @ 82B368B
 	.string "Don't you agree, {PLAYER}?$"
 
 MatchCall_Text_Wallace:: @ 82B3790
-	.string "Wallace: Hello, {PLAYER}{KUN}.\n"
+	.string "Blake: Hello, {PLAYER}{KUN}.\n"
 	.string "Have you met Steven?\p"
 	.string "He is…\n"
 	.string "Actually incredibly skilled.\p"

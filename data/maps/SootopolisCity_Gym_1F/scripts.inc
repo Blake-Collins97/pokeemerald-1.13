@@ -237,9 +237,9 @@ SootopolisCity_Gym_1F_EventScript_GymStatue:: @ 8225089
 SootopolisCity_Gym_1F_Text_GymGuideAdvice: @ 8225093
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "Sootopolis's Gym Leader Juan is\n"
+	.string "Sootopolis's Gym Leader Sharni is\n"
 	.string "a master of Water-type Pokémon.\p"
-	.string "And, to get to Juan, an icy floor\n"
+	.string "And, to get to Sharni, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all I\n"
 	.string "have for you.\p"
@@ -247,7 +247,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice: @ 8225093
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory: @ 82251AF
-	.string "Yow! You've beaten even Juan, who\n"
+	.string "Yow! You've beaten even Sharni, who\n"
 	.string "was supposedly the best in all Hoenn!\p"
 	.string "Okay! Check out your Trainer Card.\p"
 	.string "If you've gotten all the Badges, you're\n"
@@ -257,18 +257,16 @@ SootopolisCity_Gym_1F_Text_JuanIntro: @ 8225268
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught Wallace everything\n"
+	.string "I was taught by Blake all\n"
 	.string "there is to know about Pokémon.\p"
-	.string "Once, I had given up my position as\n"
-	.string "the Gym Leader.\p"
-	.string "In my place, I had entrusted Wallace\n"
+	.string "In his place, I was entrusted\n"
 	.string "with the Gym.\p"
-	.string "However, a compelling reason arose for\n"
-	.string "me to make a comeback.\p"
 	.string "Ah, but enough chatter.\n"
 	.string "Let us begin our match, shall we?\p"
-	.string "Please, you shall bear witness to\n"
-	.string "our artistry.\p"
+	.string "Let us see if you can defeat\n"	
+	.string "The strongest gym leader in Hoenn\p"
+	.string "and sister of the champion.\n"
+	.string "Please, you shall bear witness to\p"
 	.string "A grand illusion of water sculpted\n"
 	.string "by Pokémon and myself!$"
 
@@ -281,19 +279,14 @@ SootopolisCity_Gym_1F_Text_JuanDefeat: @ 8225432
 	.string "Very well, you are the winner.\p"
 	.string "From you, I sense the brilliant shine\n"
 	.string "of skill that will overcome all.\p"
-	.string "However, compared with me or even\n"
-	.string "Wallace, you are lacking in elegance.\p"
-	.string "Perhaps I should make you a loan\n"
-	.string "of my outfit?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Hahaha, I merely jest!\p"
-	.string "Rather than my clothes, I shall reward\n"
+	.string "I look forward to your battle\n"
+	.string "With my brother\p"
+	.string "but in the meantime, I'll reward\n"
 	.string "you with this, the Rain Badge!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge: @ 8225598
 	.string "{PLAYER} received the Rain Badge\n"
-	.string "from Juan.$"
+	.string "from Sharni.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis: @ 82255BE
 	.string "Having the Rain Badge shall assure you\n"
@@ -308,7 +301,7 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis: @ 82255BE
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredKabutops:
-	.string "Registered Juan's Kabutops\n"
+	.string "Registered Sharni's Kabutops\n"
 	.string "in the PokéNav.$"
 
 SootopolisCity_Gym_1F_Text_TakeThis:
@@ -323,7 +316,7 @@ SootopolisCity_Gym_1F_Text_ExplainScald: @ 82256C1
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan: @ 822574D
-	.string "Registered Gym Leader Juan\n"
+	.string "Registered Gym Leader Sharni\n"
 	.string "in the PokéNav.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle: @ 8225778
@@ -348,11 +341,11 @@ SootopolisCity_Gym_1F_Text_GymStatue: @ 82258FA
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified: @ 8225916
 	.string "Sootopolis City Pokémon Gym\p"
-	.string "Juan's Certified Trainers:\n"
+	.string "Sharni's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch: @ 8225950
-	.string "Juan: Very Good!\n"
+	.string "Sharni: Very Good!\n"
 	.string "Let the dance begin!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat: @ 8225A2E
@@ -360,7 +353,7 @@ SootopolisCity_Gym_1F_Text_JuanRematchDefeat: @ 8225A2E
 	.string "You have defeated me again!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch: @ 8225A67
-	.string "Juan: If I told you to become my\n"
+	.string "Sharni: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
 	.string "to you.\p"
@@ -370,13 +363,13 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch: @ 8225A67
 	.string "of nobility!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons: @ 8225B48
-	.string "Juan: Ah, no, no, no.\n"
+	.string "Sharni: Ah, no, no, no.\n"
 	.string "You have with you but one Pokémon.\p"
 	.string "I wish that you would return with\n"
 	.string "two, perhaps more, Pokémon, please.$"
 
 SootopolisCity_Gym_1F_Text_JuanChooseFormat:
-	.string "Juan: Ah, this Gym had returned to its\n"
+	.string "Sharni: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"

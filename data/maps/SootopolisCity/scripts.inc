@@ -1610,7 +1610,7 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave: @ 81E6DFE
 	.string "A Trainer who has knowledge and\n"
 	.string "experience of many kinds of Pokémon…\p"
 	.string "If such a person were to appear, I was\n"
-	.string "instructed by Wallace to lead that\l"
+	.string "instructed by Blake to lead that\l"
 	.string "Trainer to this cave.$"
 
 SootopolisCity_Text_AwakenedPokemonClash: @ 81E6ED4
@@ -1730,7 +1730,7 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon: @ 81E7737
 SootopolisCity_Text_HereWereAreHelpWallace: @ 81E77F0
 	.string "Steven: Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
-	.string "Wallace.\p"
+	.string "Blake.\p"
 	.string "I think you have what's needed to\n"
 	.string "help him…$"
 
@@ -1755,7 +1755,7 @@ SootopolisCity_Text_MaxieArchieLeft: @ 81E794B
 	.string "return those Orbs…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar: @ 81E79C8
-	.string "Wallace: Oh?\n"
+	.string "Blake: Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "Haven't you scaled the Sky Pillar\n"
 	.string "yet?\p"
@@ -1763,14 +1763,14 @@ SootopolisCity_Text_HaventYouScaledSkyPillar: @ 81E79C8
 	.string "the top of the Sky Pillar…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm: @ 81E7A3E
-	.string "Wallace: {PLAYER}{KUN}…\p"
+	.string "Blake: {PLAYER}{KUN}…\p"
 	.string "The leaders of Team Magma and Aqua,\n"
 	.string "I don't think they meant harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis: @ 81E7ACF
-	.string "Wallace: {PLAYER}{KUN}…\n"
+	.string "Blake: {PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
 	.string "Thanks to your help, Sootopolis…\n"
 	.string "No, all of Hoenn was saved.\p"
@@ -1792,6 +1792,6 @@ SootopolisCity_Text_ExplainWaterfallGoToGym: @ 81E7B86
 	.string "that door.$"
 
 SootopolisCity_Text_DazzledByMentor: @ 81E7CBC
-	.string "Wallace: I'm sure that you will be\n"
-	.string "dazzled by my mentor's breathtakingly\l"
+	.string "Blake: I'm sure that you will be\n"
+	.string "dazzled by my Sisters breathtakingly\l"
 	.string "elegant battle style.$"

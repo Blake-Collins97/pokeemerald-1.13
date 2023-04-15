@@ -451,8 +451,8 @@ MossdeepCity_Text_SootopolisNewGymLeader: @ 81E5581
 	.string "island city Sootopolis?\p"
 	.string "I think the Gym there had a new\n"
 	.string "Leader come in.\p"
-	.string "People tell me the new Leader once\n"
-	.string "mentored Wallace.$"
+	.string "People tell me the new Leader was\n"
+	.string "once mentored by Blake.$"
 
 MossdeepCity_Text_AvalancheNonsense:
 	.string "You Trainer?\p"

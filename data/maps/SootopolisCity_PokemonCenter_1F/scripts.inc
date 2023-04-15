@@ -67,13 +67,10 @@ PokeMart_PokeCenterSootopolisCity::
 	end
 
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn: @ 8226562
-	.string "Wallace is rumored to be the toughest\n"
+	.string "Blake is rumored to be the toughest\n"
 	.string "Trainer in the whole Hoenn region.\p"
 	.string "This town's Gym is led by the Trainer\n"
-	.string "who taught Wallace.\p"
-	.string "But the Elite Four… They're said to be\n"
-	.string "even stronger than Wallace's mentor.\p"
-	.string "How strong could they be?$"
+	.string "who was taught by Blake.$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge: @ 822664B
 	.string "Everyone in town has taken refuge\n"
