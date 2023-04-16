@@ -2132,7 +2132,7 @@ MatchCall_Text_Wattson4:: @ 82B2B01
 	.string "with shocking power!$"
 
 MatchCall_Text_Flannery1:: @ 82B2B4D
-	.string "Flannery: {PLAYER}…\p"
+	.string "Chelly: {PLAYER}…\p"
 	.string "When we battled, I learned exactly\n"
 	.string "how immature I was.\p"
 	.string "But I'm not done yet!\p"
@@ -2142,7 +2142,7 @@ MatchCall_Text_Flannery1:: @ 82B2B4D
 	.string "please challenge us again.$"
 
 MatchCall_Text_Flannery2:: @ 82B2C0E
-	.string "Flannery: Hello, {PLAYER}?\n"
+	.string "Chelly: Hello, {PLAYER}?\n"
 	.string "Congratulations!\p"
 	.string "Word of your success has reached\n"
 	.string "us like the heat of a volcano!\p"
@@ -2153,13 +2153,13 @@ MatchCall_Text_Flannery2:: @ 82B2C0E
 	.string "Match Call list.$"
 
 MatchCall_Text_Flannery3:: @ 82B2CF1
-	.string "Flannery: Oh, {PLAYER}?\n"
+	.string "Chelly: Oh, {PLAYER}?\n"
 	.string "Our Gym's ready!\p"
 	.string "Come to Lavaridge for a soak\n"
 	.string "in the hot spring and a challenge!$"
 
 MatchCall_Text_Flannery4:: @ 82B2D54
-	.string "Flannery: {PLAYER}…\n"
+	.string "Chelly: {PLAYER}…\n"
 	.string "I'm positive that you keep getting\l"
 	.string "better at training every time.$"
 

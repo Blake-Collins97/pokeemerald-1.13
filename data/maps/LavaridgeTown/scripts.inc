@@ -405,7 +405,7 @@ LavaridgeTown_Text_PokemonNippedBackside: @ 81EAEE1
 	.string "A Pokémon nipped my backside!$"
 
 LavaridgeTown_Text_OhYouLikeHotSprings: @ 81EAF4E
-	.string "Flannery is a strong trainer,\n"
+	.string "Chelly is a strong trainer,\n"
 	.string "She relies on the power of the sun\p"
 	.string "It is said there is a pokemon in\l"
 	.string "Meteor Falls that can bring rain.$"
@@ -413,7 +413,7 @@ LavaridgeTown_Text_OhYouLikeHotSprings: @ 81EAF4E
 LavaridgeTown_Text_BatheInHotSpringsEveryDay: @ 81EAF9B
 	.string "I bathe in the hot springs every day.\p"
 	.string "I want to become a beautiful and strong\n"
-	.string "Gym Leader like Flannery.$"
+	.string "Gym Leader like Chelly.$"
 
 LavaridgeTown_Text_IfPokemonInHotSprings: @ 81EB003
 	.string "If people put Pokémon in hot springs,\n"
@@ -435,7 +435,7 @@ LavaridgeTown_Text_TownSign: @ 81EB12B
 
 LavaridgeTown_Text_GymSign: @ 81EB178
 	.string "Lavaridge Town Pokémon Gym\n"
-	.string "Leader: Flannery\l"
+	.string "Leader: Chelly\l"
 	.string "“One with a fiery passion that burns!”$"
 
 LavaridgeTown_Text_HerbShopSign: @ 81EB1CB

@@ -454,7 +454,7 @@ Text_WantToStrength: @ 829092C
 Text_ArcanineStrength: @ 829092C
 	.string "It's a big boulder, but a Pokémon\n"
 	.string "may be able to push it aside.\p"
-	.string "Call Flannery's Arcanine to push it?$"
+	.string "Call Chelly's Arcanine to push it?$"
 
 Text_MonUsedStrength: @ 829098C
 	.string "{STR_VAR_1} used Strength!\p"

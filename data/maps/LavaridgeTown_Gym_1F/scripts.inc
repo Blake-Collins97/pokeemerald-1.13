@@ -264,7 +264,7 @@ LavaridgeTown_Gym_1F_Text_GymGuideAdvice1:
 	.string "to help with your challenge.$"
 
 LavaridgeTown_Gym_1F_Text_GymGuideAdvice2: @ 81FE9BF
-	.string "Lavaridge's Gym Leader Flannery\n"
+	.string "Lavaridge's Gym Leader Chelly\n"
 	.string "uses Fire-type Pokémon.\p"
 	.string "Her passion for Pokémon burns stronger\n"
 	.string "and hotter than a volcano.\p"
@@ -297,7 +297,7 @@ LavaridgeTown_Gym_1F_Text_AxleIntro: @ 81FEB7B
 	.string "Don't come along and stress me out!$"
 
 LavaridgeTown_Gym_1F_Text_AxleDefeat: @ 81FEBC0
-	.string "I hope Flannery flames you good!$"
+	.string "I hope Chelly flames you good!$"
 
 LavaridgeTown_Gym_1F_Text_AxlePostBattle: @ 81FEBE1
 	.string "Haaah… Whew…\p"
@@ -317,7 +317,7 @@ LavaridgeTown_Gym_B1F_Text_KeeganDefeat: @ 81FECE3
 
 LavaridgeTown_Gym_B1F_Text_KeeganPostBattle: @ 81FED02
 	.string "Your skill is real…\n"
-	.string "But our Leader Flannery is strong.\p"
+	.string "But our Leader Chelly is strong.\p"
 	.string "If you don't watch yourself, you'll be\n"
 	.string "burned seriously.$"
 
@@ -343,7 +343,7 @@ LavaridgeTown_Gym_1F_Text_DanielleDefeat: @ 81FEE42
 
 LavaridgeTown_Gym_1F_Text_DaniellePostBattle: @ 81FEE5D
 	.string "I'm going to be a pretty and strong\n"
-	.string "Trainer just like Flannery.$"
+	.string "Trainer just like Chelly.$"
 
 LavaridgeTown_Gym_B1F_Text_JaceIntro: @ 81FEE9D
 	.string "Come on, get with it!\n"
@@ -380,29 +380,25 @@ LavaridgeTown_Gym_B1F_Text_EliDefeat: @ 81FF05F
 
 LavaridgeTown_Gym_B1F_Text_EliPostBattle: @ 81FF09A
 	.string "I stay here because I became a fan\n"
-	.string "of Flannery's power.\p"
+	.string "of Chelly's power.\p"
 	.string "Hehehehe.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryIntro: @ 81FF0DC
-	.string "Welcome… No, wait.\p"
-	.string "Puny Trainer, how good to see you've\n"
+	.string "Welcome trainer\p"
+	.string "How good to see you've\n"
 	.string "made it here!\p"
-	.string "I have been entrusted with the…\n"
-	.string "No, wait.\p"
-	.string "I am Flannery, and I'm the Gym\n"
+	.string "I am Chelly, and I'm the Gym\n"
 	.string "Leader here!\p"
-	.string "Uh…\n"
-	.string "Dare not underestimate me, though\l"
-	.string "I have been Leader only a short time!\p"
+	.string "Dare not underestimate me.\l"
 	.string "With skills inherited from my grand-\n"
-	.string "father, I shall, uh…demonstrate the\l"
+	.string "father, I shall, demonstrate the\l"
 	.string "hot moves we have honed on this land!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryDefeat: @ 81FF233
 	.string "Oh…\n"
-	.string "I guess I was trying too hard…\p"
-	.string "I… I've only recently become\n"
-	.string "a Gym Leader.\p"
+	.string "Congradulations…\p"
+	.string "I… I didn't expect you to\n"
+	.string "beat me.\p"
 	.string "I tried too hard to be someone\n"
 	.string "I'm not.\p"
 	.string "I have to do things my natural way. If\n"
@@ -412,7 +408,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat: @ 81FF233
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge: @ 81FF32F
 	.string "{PLAYER} received the Heat Badge\n"
-	.string "from Flannery.$"
+	.string "from Chelly.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis: @ 81FF359
 	.string "If you have a Heat Badge, all Pokémon\n"
@@ -437,11 +433,11 @@ LavaridgeTown_Gym_1F_Text_ExplainOverheat: @ 81FF45C
 	.string "be suitable for longer battles.$"
 
 LavaridgeTown_Gym_1F_Text_RegisteredFlannery: @ 81FF517
-	.string "Registered Gym Leader Flannery\n"
+	.string "Registered Gym Leader Chelly\n"
 	.string "in the PokéNav.$"
 
 LavaridgeTown_Gym_1F_Text_RegisteredArcanine: @ 81FF517
-	.string "Registered Flannery's Arcanine\n"
+	.string "Registered Chelly's Arcanine\n"
 	.string "in the PokéNav.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle: @ 81FF546
@@ -454,11 +450,11 @@ LavaridgeTown_Gym_1F_Text_GymStatue: @ 81FF5A9
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified: @ 81FF5C4
 	.string "Lavaridge Town Pokémon Gym\p"
-	.string "FLANNERY's Certified Trainers:\n"
+	.string "Chelly's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch: @ 81FF601
-	.string "Flannery: Let's exchange superhot\n"
+	.string "Chelly: Let's exchange superhot\n"
 	.string "moves in another battle!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat: @ 81FF69F
@@ -466,7 +462,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat: @ 81FF69F
 	.string "On the verge of eruption!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostRematch: @ 81FF6BF
-	.string "Flannery: I lost the match,\n"
+	.string "Chelly: I lost the match,\n"
 	.string "but I'm completely satisfied.\p"
 	.string "It's not often I get to enjoy a battle\n"
 	.string "this heated.\p"
@@ -480,7 +476,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons: @ 81FF75E
 	.string "see me, bring at least two Pokémon.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryChooseFormat:
-	.string "Flannery: Losing a battle isn't going\n"
+	.string "Chelly: Losing a battle isn't going\n"
 	.string "to deflate me.\p"
 	.string "I love Pokémon.\n"
 	.string "I love to battle.\l"
@@ -489,5 +485,5 @@ LavaridgeTown_Gym_1F_Text_FlanneryChooseFormat:
 	.string "rematch: singles or doubles?$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryAllowLegends:
-	.string "Flannery: And can I turn up the heat\n"
+	.string "Chelly: And can I turn up the heat\n"
 	.string "with my Legendary Pokémon?$"
