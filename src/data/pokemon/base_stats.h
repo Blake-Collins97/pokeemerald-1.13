@@ -5875,7 +5875,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
         #ifdef REBALANCED_VERSION
-            .abilities = {ABILITY_MAGMA_ARMOR, ABILITY_SIMPLE, ABILITY_WEAK_ARMOR},
+            .abilities = {ABILITY_WATER_ABSORB, ABILITY_SIMPLE, ABILITY_WEAK_ARMOR},
         #else
             .abilities = {ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR},
         #endif
@@ -8871,7 +8871,7 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 80,
         .baseAttack    = 100,
         .baseDefense   = 80,
-        .baseSpeed     = 100,
+        .baseSpeed     = 105,
         .baseSpDefense = 80,
         #ifdef REBALANCED_VERSION
             .baseSpAttack  = 100,
@@ -14890,7 +14890,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_ANGER_POINT},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_TINTED_LENS},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -14915,7 +14915,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_ANGER_POINT},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_TINTED_LENS},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -14940,7 +14940,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_ANGER_POINT},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_TINTED_LENS},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
