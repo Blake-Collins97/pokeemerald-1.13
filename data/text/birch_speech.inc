@@ -135,22 +135,20 @@ gText_Pie_LevelCaps::
     .string "learn more about it.$"
 
 gText_Pie_StandardCaps::
-	.string "The Default Caps setting is what\n"
-	.string "the game is designed around.\p"
-	.string "With this option, level caps are only\n"
-	.string "present for the first four badges.\p"
-	.string "After that, there is no cap, and you\n"
-	.string "can train all the way to level 100.\p"
-	.string "So, would you like to play with\n"
+	.string "The Default Caps setting is closest\n"
+	.string "to a normal playthough.\p"
+	.string "Pokemon will level up as normal.\n"
+	.string "So you can train all the way to \p"
+	.string "Level 100 instantly.\n"
+	.string "So,\p"
+	.string "would you like to play with\n"
 	.string "default level caps?$"
 
 gText_Pie_MoreCaps::
 	.string "The More Caps setting simply adds\n"
-	.string "more level caps to the game.\p"
-	.string "With this option, there will be a\n"
-	.string "level cap tied to each badge, and you\l"
-	.string "won't be able to reach level 100\l"
-	.string "before becoming Champion.\p"
+	.string "a  level caps dependant on the number\p"
+	.string "of gym badges earned.\n"
+	.string "The game is balanced around this option\l"
 	.string "So, would you like to play with\n"
 	.string "more level caps?$"
 
