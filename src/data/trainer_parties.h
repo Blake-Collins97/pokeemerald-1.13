@@ -18509,7 +18509,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     .species = SPECIES_SWAMPERT,
     .heldItem = ITEM_EXPERT_BELT,
     .ability = 2, // Swift Swim
-    .spread = SPREAD_31_IV_HP_ATK_ADAMANT
+    .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
     .moves = MOVE_STOMPING_TANTRUM, MOVE_WATERFALL, MOVE_ICE_PUNCH, MOVE_BRICK_BREAK
     },
     {
