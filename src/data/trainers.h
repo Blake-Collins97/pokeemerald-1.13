@@ -999,7 +999,7 @@ const struct Trainer gTrainers[] = {
 
 // rusturf tunnel east
 
-    [TRAINER_MIKE_1] =
+    [TRAINER_MIKE_2] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_HIKER,
@@ -1009,8 +1009,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_Mike1),
-        .party = {.ItemCustomMoves = sParty_Mike1},
+        .partySize = ARRAY_COUNT(sParty_Mike2),
+        .party = {.ItemCustomMoves = sParty_Mike2},
     },
 
 //Route 118 West
