@@ -12650,20 +12650,20 @@ static const struct TrainerMonItemCustomMoves sParty_Darius[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
 {
-    .lvl = 0,
-    .species = SPECIES_ORICORIO,
+    .lvl = 2,
+    .species = SPECIES_ALTARIA,
     .heldItem = ITEM_FOCUS_SASH,
-    .ability = 0, // Dancer
-    .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
-    .moves = MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_AIR_SLASH, MOVE_HURRICANE
+    .ability = 2, // Cloud Nine
+    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
+    .moves = MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_DRAGON_RUSH, MOVE_DRAGON_DANCE
     },
     {
     .lvl = 0,
-    .species = SPECIES_ORICORIO_POM_POM,
-    .heldItem = ITEM_FOCUS_SASH,
-    .ability = 0, // Dancer
-    .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
-    .moves = MOVE_QUIVER_DANCE, MOVE_REVELATION_DANCE, MOVE_AIR_SLASH, MOVE_HURRICANE
+    .species = SPECIES_DRAGONITE,
+    .heldItem = ITEM_LIFE_ORB,
+    .ability = 2, // Multiscale
+    .spread = SPREAD_31_IV_HP_ATK_MIXED,
+    .moves = MOVE_DRAGON_CLAW, MOVE_EXTREME_SPEED, MOVE_AIR_SLASH, MOVE_HYPER_BEAM
     },
     {
     .lvl = 1,
@@ -12683,11 +12683,11 @@ static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     },
     {
     .lvl = 2,
-    .species = SPECIES_ALTARIA,
-    .heldItem = ITEM_ALTARIANITE,
-    .ability = 2, // Cloud Nine
+    .species = SPECIES_FLYGON,
+    .heldItem = ITEM_FLYGONITE,
+    .ability = 0, // Levitate
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_DRAGON_RUSH, MOVE_DRAGON_DANCE
+    .moves = MOVE_GIGA_DRAIN, MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_DRAGON_DANCE
     }
 };
 
