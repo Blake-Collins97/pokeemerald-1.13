@@ -1,9 +1,9 @@
-# Inclement Emerald
+# Blake EmeraldInclement Emerald
 
 This is a ROM hack of Pokémon Emerald built using the [**pokeemerald decompilation project**](https://github.com/pret/pokeemerald).
+Adjusted from the fantastic Inclement Emerald (IE discord link https://discord.gg/ZQpuvD6NTs)
 
-For details, credits, and other projects used, see the hack's [**Poké Community thread**](https://www.pokecommunity.com/showthread.php?t=457039).
+Follow along as I learn the decomp process and hopefully end up with a semi balanced difficulty hack, buffing some of the weaker traditional Pokemon.
 
-## Contacts
 
-You can join the hack's Discord server by clicking [**here**](https://discord.gg/ZQpuvD6NTs).
+
