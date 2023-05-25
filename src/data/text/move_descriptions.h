@@ -324,8 +324,8 @@ static const u8 sSleepPowderDescription[] = _(
     "cause the foe to sleep.");
 
 static const u8 sPetalDanceDescription[] = _(
-    "A rampage of 2 to 3 turns\n"
-    "that confuses the user.");
+    "A strong barrage of petal\n"
+    "but lowers defensive stats.");
 
 static const u8 sStringShotDescription[] = _(
     "Binds the foes with string\n"
@@ -512,8 +512,8 @@ static const u8 sFireBlastDescription[] = _(
     "strikes. May cause a burn.");
 
 static const u8 sWaterfallDescription[] = _(
-    "Charges the foe with speed\n"
-    "to climb waterfalls.");
+    "A strong attack but lowers\n"
+    "the defensive stats.");
 
 static const u8 sClampDescription[] = _(
     "Traps and squeezes the\n"
