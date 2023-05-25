@@ -1606,12 +1606,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_ARCANINE] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 110,
-        .baseDefense   = 80,
+        .baseHP        = 105,
+        .baseAttack    = 115,
+        .baseDefense   = 82,
         .baseSpeed     = 95,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 80,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 88,
         .type1 = TYPE_FIRE,
         .type2 = TYPE_FIRE,
         .catchRate = 75,
@@ -6059,13 +6059,13 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_MANTINE] =
     {
         .baseHP        = 85,
-        .baseAttack    = 40,
+        .baseAttack    = 33,
         .baseDefense   = 70,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 140,
+        .baseSpeed     = 82,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 120,
         .type1 = TYPE_WATER,
-        .type2 = TYPE_FLYING,
+        .type2 = TYPE_FIRE,
         .catchRate = 25,
         .expYield = 170,
         .evYield_SpDefense = 2,
@@ -6075,7 +6075,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_WATER_1,
         .eggGroup2 = EGG_GROUP_WATER_1,
-        .abilities = {ABILITY_SWIFT_SWIM, ABILITY_WATER_ABSORB, ABILITY_POISON_HEAL},
+        .abilities = {ABILITY_SWIFT_SWIM, ABILITY_WATER_ABSORB, ABILITY_FLASH_FIRE},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },
@@ -8205,12 +8205,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_AGGRON] =
     {
-        .baseHP        = 90,
+        .baseHP        = 110,
         .baseAttack    = 120,
         .baseDefense   = 180,
         .baseSpeed     = 48,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 65,
+        .baseSpAttack  = 72,
+        .baseSpDefense = 70,
         .type1 = TYPE_STEEL,
         .type2 = TYPE_STEEL,
         .catchRate = 45,
@@ -8868,16 +8868,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_FLYGON] =
     {
-        .baseHP        = 80,
+        .baseHP        = 82,
         .baseAttack    = 100,
         .baseDefense   = 80,
-        .baseSpeed     = 105,
+        .baseSpeed     = 118,
         .baseSpDefense = 80,
-        #ifdef REBALANCED_VERSION
-            .baseSpAttack  = 100,
-        #else
-            .baseSpAttack  = 80,
-        #endif
+        .baseSpAttack  = 100,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_DRAGON,
         .catchRate = 45,
@@ -12376,14 +12372,14 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MANTYKE] =
     {
-        .baseHP        = 45,
+        .baseHP        = 60,
         .baseAttack    = 20,
         .baseDefense   = 50,
         .baseSpeed     = 50,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 120,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 90,
         .type1 = TYPE_WATER,
-        .type2 = TYPE_FLYING,
+        .type2 = TYPE_FIRE,
         .catchRate = 25,
         .expYield = 69,
         .evYield_SpDefense = 1,
@@ -12393,7 +12389,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_UNDISCOVERED,
         .eggGroup2 = EGG_GROUP_UNDISCOVERED,
-        .abilities = {ABILITY_SWIFT_SWIM, ABILITY_WATER_ABSORB, ABILITY_WATER_VEIL},
+        .abilities = {ABILITY_SWIFT_SWIM, ABILITY_WATER_ABSORB, ABILITY_FLASH_FIRE},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
