@@ -719,7 +719,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling: @
 	.string "So keep on battling!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman: @ 821D52E
-	.string "Norman battled with more power,\n"
+	.string "Grub battled with more power,\n"
 	.string "charisma, and showmanship than you.\p"
 	.string "Even though people may say that\n"
 	.string "you're strong…\p"
@@ -728,9 +728,9 @@ LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman: @ 821D52E
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent: @ 821D5DC
 	.string "You're beginning to get the same\n"
-	.string "air of awe Norman exudes.\p"
+	.string "air of awe Grub exudes.\p"
 	.string "But there's something conclusively\n"
-	.string "different between you and Norman.\p"
+	.string "different between you and Grub.\p"
 	.string "I can't tell you what that is.\n"
 	.string "You'll have to find it yourself.$"
 
