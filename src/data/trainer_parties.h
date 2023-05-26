@@ -2959,7 +2959,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     .heldItem = ITEM_SITRUS_BERRY,
     .ability = 1, // Guts
     .spread = SPREAD_BRAWLY_ONE_MON,
-    .moves = MOVE_BULK_UP, MOVE_OCTOLOCK, MOVE_OCTAZOOKA, MOVE_BRICK_BREAK
+    .moves = MOVE_BULK_UP, MOVE_OCTOLOCK, MOVE_BIND, MOVE_BRICK_BREAK
     }
 };
 
@@ -8220,13 +8220,13 @@ static const struct TrainerMonItemCustomMoves sParty_Cyndy4[] = {
     .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
     .moves = MOVE_DRAIN_PUNCH, MOVE_DOUBLE_EDGE, MOVE_PAYBACK, MOVE_BULK_UP
     },
-/*     {
+    {
     .lvl = -3,
     .species = SPECIES_GRAPPLOCT,
     .heldItem = ITEM_PAYAPA_BERRY,
     .spread = SPREAD_31_IV_HP_SPDEF_CALM,
     .moves = MOVE_DRAIN_PUNCH, MOVE_LIQUIDATION, MOVE_PAYBACK, MOVE_BULK_UP
-    }, */
+    }, 
     {
     .lvl = -3,
     .species = SPECIES_MEDICHAM,

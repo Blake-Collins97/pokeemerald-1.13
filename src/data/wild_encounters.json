@@ -1243,7 +1243,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_MACHOKE"
+                "species": "SPECIES_ROLYCOLY"
               },
               {
                 "min_level": 14,
@@ -1278,12 +1278,12 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_RUFFLET"
+                "species": "SPECIES_ROOKIDEE"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_VULLABY"
+                "species": "SPECIES_ROOKIDEE"
               },
               {
                 "min_level": 16,
@@ -2316,22 +2316,12 @@
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_PICHU"
+                "species": "SPECIES_EKANS"
               },
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_PICHU"
-              },
-              {
-                "min_level": 6,
-                "max_level": 8,
-                "species": "SPECIES_CASCOON"
-              },
-              {
-                "min_level": 6,
-                "max_level": 8,
-                "species": "SPECIES_SILCOON"
+                "species": "SPECIES_KOFFING"
               },
               {
                 "min_level": 6,
@@ -2342,6 +2332,16 @@
                 "min_level": 6,
                 "max_level": 8,
                 "species": "SPECIES_SILCOON"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_DUSTOX"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_BUTTERFREE"
               }
             ]
           },
@@ -3756,17 +3756,17 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_CRABRAWLER"
+                "species": "SPECIES_CLOBBOPUS"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CRABRAWLER"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_EXEGGCUTE"
+                "species": "SPECIES_KRABBY"
               },
               {
                 "min_level": 5,
