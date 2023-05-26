@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_DEWFORD_TOWN",
+      "direction": "left",
       "offset": 0,
-      "direction": "left"
+      "map": "MAP_DEWFORD_TOWN"
     },
     {
-      "map": "MAP_ROUTE108",
+      "direction": "right",
       "offset": 0,
-      "direction": "right"
+      "map": "MAP_ROUTE108"
     }
   ],
   "object_events": [
@@ -117,13 +117,7 @@
       "flag": "0"
     }
   ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
 }

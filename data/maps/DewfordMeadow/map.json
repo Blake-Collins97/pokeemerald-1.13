@@ -14,9 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_DEWFORD_TOWN",
+      "direction": "right",
       "offset": -10,
-      "direction": "right"
+      "map": "MAP_DEWFORD_TOWN"
     }
   ],
   "object_events": [
@@ -66,7 +66,7 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_DEWFORD_MANOR_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
