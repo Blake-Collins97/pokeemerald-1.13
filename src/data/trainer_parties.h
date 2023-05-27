@@ -318,7 +318,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRoute103Torchic[] = 
 static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroTreecko[] = {
     {
     .lvl = -1,
-    .species = SPECIES_SWELLOW,
+    .species = SPECIES_TAILLOW,
     .spread = SPREAD_15_IV_0_EV,
     .moves = MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_ROOST, MOVE_REFRESH
     },    
@@ -347,7 +347,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroTreecko[] = 
 static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroMudkip[] = {
     {
     .lvl = -1,
-    .species = SPECIES_SWELLOW,
+    .species = SPECIES_TAILLOW,
     .spread = SPREAD_15_IV_0_EV,
     .moves = MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_ROOST, MOVE_REFRESH
     },
@@ -375,7 +375,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroMudkip[] = {
 static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroTorchic[] = {
     {
     .lvl = -1,
-    .species = SPECIES_SWELLOW,
+    .species = SPECIES_TAILLOW,
     .spread = SPREAD_15_IV_0_EV,
     .moves = MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_ROOST, MOVE_REFRESH
     },
@@ -818,7 +818,7 @@ static const struct TrainerMonItemCustomMoves sParty_MayRoute103Torchic[] = { //
 static const struct TrainerMonItemCustomMoves sParty_MayRustboroMudkip[] = { // May Rustboro
     {
     .lvl = -1,
-    .species = SPECIES_SWELLOW,
+    .species = SPECIES_TAILLOW,
     .spread = SPREAD_15_IV_0_EV,
     .moves = MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_ROOST, MOVE_REFRESH
     },
@@ -848,7 +848,7 @@ static const struct TrainerMonItemCustomMoves sParty_MayRustboroMudkip[] = { // 
 static const struct TrainerMonItemCustomMoves sParty_MayRustboroTreecko[] = {
     {
     .lvl = -1,
-    .species = SPECIES_SWELLOW,
+    .species = SPECIES_TAILLOW,
     .spread = SPREAD_15_IV_0_EV,
     .moves = MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_ROOST, MOVE_REFRESH
     },
@@ -878,7 +878,7 @@ static const struct TrainerMonItemCustomMoves sParty_MayRustboroTreecko[] = {
 static const struct TrainerMonItemCustomMoves sParty_MayRustboroTorchic[] = {
     {
     .lvl = -1,
-    .species = SPECIES_SWELLOW,
+    .species = SPECIES_TAILLOW,
     .spread = SPREAD_15_IV_0_EV,
     .moves = MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_ROOST, MOVE_REFRESH
     },
