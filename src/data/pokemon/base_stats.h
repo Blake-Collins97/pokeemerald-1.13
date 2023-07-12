@@ -8036,8 +8036,8 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SKITTY] =
     {
         .baseHP        = 50,
-        .baseAttack    = 45,
-        .baseDefense   = 45,
+        .baseAttack    = 55,
+        .baseDefense   = 55,
         .baseSpeed     = 50,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
@@ -9069,7 +9069,7 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 90,
         .baseAttack    = 85,
         .baseDefense   = 65,
-        .baseSpeed     = 70,
+        .baseSpeed     = 80,
         #ifdef REBALANCED_VERSION
             .baseSpAttack  = 125,
             .baseSpDefense = 115,
@@ -9098,7 +9098,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SOLROCK] =
     {
         .baseHP        = 90,
-        .baseSpeed     = 70,
+        .baseSpeed     = 80,
         .baseSpAttack  = 85,
         .baseSpDefense = 65,
         #ifdef REBALANCED_VERSION
@@ -9310,7 +9310,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_CRADILY] =
     {
         .baseAttack    = 81,
-        .baseDefense   = 97,
+        .baseDefense   = 102,
         .baseSpeed     = 43,
         .baseSpDefense = 107,
         #ifdef REBALANCED_VERSION
@@ -9365,7 +9365,7 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 95,
         .baseAttack    = 125,
-        .baseSpeed     = 65,
+        .baseSpeed     = 75,
         .baseSpAttack  = 40,
         .baseSpDefense = 80,
         #ifdef REBALANCED_VERSION
@@ -11335,7 +11335,7 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 85,
         .baseDefense   = 55,
-        .baseSpeed     = 115,
+        .baseSpeed     = 121,
         .baseSpDefense = 50,
         #ifdef REBALANCED_VERSION
             .baseAttack    = 120,
@@ -11958,7 +11958,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 35,
         .baseSpDefense = 108,
         #ifdef REBALANCED_VERSION
-            .baseHP        = 70,
+            .baseHP        = 83,
         #else
             .baseHP        = 50,
         #endif
@@ -12106,7 +12106,7 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 70,
         .baseAttack    = 110,
         .baseDefense   = 70,
-        .baseSpeed     = 90,
+        .baseSpeed     = 96,
         .baseSpAttack  = 115,
         .baseSpDefense = 70,
         .type1 = TYPE_FIGHTING,
@@ -12155,9 +12155,9 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 108,
         .baseAttack    = 112,
         .baseDefense   = 118,
-        .baseSpeed     = 47,
+        .baseSpeed     = 37,
         .baseSpAttack  = 68,
-        .baseSpDefense = 72,
+        .baseSpDefense = 82,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_GROUND,
         .catchRate = 60,
@@ -12307,7 +12307,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_FAST,
         .eggGroup1 = EGG_GROUP_GRASS,
         .eggGroup2 = EGG_GROUP_GRASS,
-        .abilities = {ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE},
+        .abilities = {ABILITY_LEVITATE, ABILITY_STRONG_JAW, ABILITY_ARENA_TRAP},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
@@ -14497,7 +14497,7 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 105,
         .baseDefense   = 75,
-        .baseSpeed     = 74,
+        .baseSpeed     = 64,
         .baseSpDefense = 75,
         #ifdef REBALANCED_VERSION
             .baseAttack    = 105,
@@ -14704,12 +14704,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_SCOLIPEDE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 80,
         .baseDefense   = 89,
         .baseSpeed     = 112,
         .baseSpAttack  = 55,
-        .baseSpDefense = 69,
-        .baseAttack    = 100,
+        .baseSpDefense = 79,
+        .baseAttack    = 110,
         .type1 = TYPE_BUG,
         .type2 = TYPE_POISON,
         .catchRate = 45,
@@ -15048,7 +15048,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CRUSTLE] =
     {
-        .baseHP        = 70,
+        .baseHP        = 80,
         .baseSpeed     = 45,
         .baseSpAttack  = 65,
         .baseSpDefense = 75,
