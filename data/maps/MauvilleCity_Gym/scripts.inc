@@ -333,9 +333,9 @@ MauvilleCity_Gym_Text_GymGuideAdvice2:
 	.string "He's prepared for Ground and Grass-Type\n"
 	.string "Pokémon, so you should have a backup\l"
 	.string "plan if you want to beat him!\p"
-	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his Gym! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "If you're having a hard time,\n"
+	.string "try re-visiting the Rusturf Tunnel.\p"
+	.string "But hey, go for it!$"
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, Champion-\n"

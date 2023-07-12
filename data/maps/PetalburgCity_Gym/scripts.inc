@@ -1531,8 +1531,8 @@ PetalburgCity_Gym_Text_GymGuideAdvice1: @ 8206542
 PetalburgCity_Gym_Text_GymGuideAdvice2:
 	.string "The doors in this Gym open when you\n"
 	.string "beat the awaiting Trainers.\p"
-	.string "Whoops! The doors in this room are\n"
-	.string "already open, so don't attack me!\p"
+	.string "And note, every gym leader from here \n"
+	.string "Will challenge you to a double battle!\p"
 	.string "The door at the left leads to\n"
 	.string "the Speed Room.\p"
 	.string "The door at the right leads to\n"

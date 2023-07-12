@@ -271,10 +271,10 @@ LavaridgeTown_Gym_1F_Text_GymGuideAdvice2: @ 81FE9BF
 	.string "She likes to battle in the sun, and\n"
 	.string "her Pokémon are all trained to hit as\l"
 	.string "hard as they can.\p"
-	.string "You might need some extra power to\n"
-	.string "keep up!\p"	
-	.string "Try buying some Gems from the local\n"
-	.string "Poké Mart to boost your attacks.$"
+	.string "If you're struggling, try visit\n"
+	.string "Meteor Falls to catch a pokemon that\p"	
+	.string "Can change the weather\n"
+	.string "to turn the tides of your battle.$"
 
 LavaridgeTown_Gym_1F_Text_GymGuidePostVictory: @ 81FEAB8
 	.string "Yow! That was a scorching-hot battle!$"
