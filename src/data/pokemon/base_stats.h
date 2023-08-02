@@ -23774,6 +23774,8 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
+// Mega's
+
     [SPECIES_VENUSAUR_MEGA] =
     {
         .baseHP        = 80,
@@ -25293,6 +25295,8 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
+// Alola forms 
+
     [SPECIES_RATTATA_ALOLAN] =
     {
         .baseHP        = 30,
@@ -25799,6 +25803,8 @@ const struct BaseStats gBaseStats[] =
         .flags = F_ALOLAN_FORM,
     },
 
+// Galar form
+
     [SPECIES_MEOWTH_GALARIAN] =
     {
         .baseHP        = 50,
@@ -26277,6 +26283,8 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
         .flags = F_GALARIAN_FORM,
     },
+
+// Extra Forms 
 
     [SPECIES_PIKACHU_COSPLAY] =
     {
