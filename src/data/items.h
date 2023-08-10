@@ -303,7 +303,7 @@ const struct Item gItems[] =
     {
         .name = _("Cherish Ball"),
         .itemId = ITEM_CHERISH_BALL,
-        .price = 0,
+        .price = 1000,
         .description = sCherishBallDesc,
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_CHERISH_BALL - FIRST_BALL_INDEX,
@@ -316,7 +316,7 @@ const struct Item gItems[] =
     {
         .name = _("Sport Ball"),
         .itemId = ITEM_SPORT_BALL,
-        .price = 0,
+        .price = 1000,
         .description = sSportBallDesc,
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_SPORT_BALL - FIRST_BALL_INDEX,
@@ -558,7 +558,7 @@ const struct Item gItems[] =
     {
         .name = _("Soda Pop"),
         .itemId = ITEM_SODA_POP,
-        .price = 300,
+        .price = 200,
         .holdEffectParam = 60,
         .description = sSodaPopDesc,
         .pocket = POCKET_MEDICINE,
@@ -975,7 +975,7 @@ const struct Item gItems[] =
     {
         .name = _("Rare Candy"),
         .itemId = ITEM_RARE_CANDY,
-        .price = 10000,
+        .price = 100,
         .description = sRareCandyDesc,
         .pocket = POCKET_MEDICINE,
         .type = ITEM_USE_PARTY_MENU,

@@ -73,8 +73,8 @@ Route133_EventScript_NurseTeachAudino::
 	waitse
 	playfanfare MUS_LEVEL_UP
 	msgbox Route133_Text_NurseDoneHaveVialUpgrade, MSGBOX_DEFAULT
-	setvar VAR_POKE_VIAL_MAX_CHARGES, 3
-	setvar VAR_POKE_VIAL_CHARGES, 3
+	setvar VAR_POKE_VIAL_MAX_CHARGES, 999
+	setvar VAR_POKE_VIAL_CHARGES, 999
 	fadescreen FADE_TO_BLACK
 	waitse
 	playmoncry SPECIES_CHANSEY, 0

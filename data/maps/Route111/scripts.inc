@@ -628,8 +628,8 @@ Route111_EventScript_VialUpgradeNurse::
 
 Route111_EventScript_UpgradeVialHideNurse::
 	msgbox Route111_Text_ThanksPlayer, MSGBOX_AUTOCLOSE
-	setvar VAR_POKE_VIAL_MAX_CHARGES, 2
-	setvar VAR_POKE_VIAL_CHARGES, 2
+	setvar VAR_POKE_VIAL_MAX_CHARGES, 99
+	setvar VAR_POKE_VIAL_CHARGES, 99
 	specialvar VAR_RESULT, GetPlayerFacingDirection
 	compare VAR_RESULT, DIR_NORTH
 	goto_if_eq Route111_EventScript_NurseLeaves2
