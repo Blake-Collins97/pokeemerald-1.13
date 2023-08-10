@@ -9319,7 +9319,7 @@ static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
     .lvl = 0,
     .species = SPECIES_BLAZIKEN,
     .heldItem = ITEM_WEAKNESS_POLICY,
-    .ability = 2, // Speed Boost
+    .ability = 0, // Blaze
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_BLAZE_KICK, MOVE_REVERSAL, MOVE_THUNDER_PUNCH, MOVE_ENDURE
     }
