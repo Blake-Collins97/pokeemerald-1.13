@@ -291,6 +291,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
 };
 
 // Brendan and May
+// 103
 static const struct TrainerMonItemCustomMoves sParty_BrendanRoute103Mudkip[] = {
     {
     .lvl = 0,
@@ -315,6 +316,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRoute103Torchic[] = 
     }
 };
 
+//Rusboro
 static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroTreecko[] = {
     {
     .lvl = -1,
@@ -401,6 +403,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroTorchic[] = 
     }
 };
 
+// Route 110
 static const struct TrainerMonItemCustomMoves sParty_BrendanRoute110Mudkip[] = {
     {
     .lvl = -1,
@@ -505,6 +508,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRoute110Torchic[] = 
     }
 };
 
+// Route 119
 static const struct TrainerMonItemCustomMoves sParty_BrendanRoute119Mudkip[] = {
     {
     .lvl = 0,
@@ -540,7 +544,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRoute119Mudkip[] = {
     .lvl = 0,
     .species = SPECIES_VIKAVOLT,
     .heldItem = ITEM_ASSAULT_VEST,
-    .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
+    .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
     .moves = MOVE_THUNDER, MOVE_BUG_BUZZ, MOVE_ENERGY_BALL, MOVE_MUD_SHOT
     },   
     {
@@ -587,7 +591,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRoute119Treecko[] = 
     .lvl = 0,
     .species = SPECIES_VIKAVOLT,
     .heldItem = ITEM_ASSAULT_VEST,
-    .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
+    .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
     .moves = MOVE_THUNDER, MOVE_BUG_BUZZ, MOVE_ENERGY_BALL, MOVE_MUD_SHOT
     }, 
     {
@@ -635,7 +639,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRoute119Torchic[] = 
     .lvl = 0,
     .species = SPECIES_VIKAVOLT,
     .heldItem = ITEM_ASSAULT_VEST,
-    .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
+    .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
     .moves = MOVE_THUNDER, MOVE_BUG_BUZZ, MOVE_ENERGY_BALL, MOVE_MUD_SHOT
     },  
     {
@@ -648,6 +652,7 @@ static const struct TrainerMonItemCustomMoves sParty_BrendanRoute119Torchic[] = 
     }
 };
 
+//Lilycove
 static const struct TrainerMonItemCustomMoves sParty_BrendanLilycoveMudkip[] = {
     {
     .lvl = 1,
