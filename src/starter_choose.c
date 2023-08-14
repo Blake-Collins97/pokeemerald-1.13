@@ -115,6 +115,7 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
     {8, 4},
 };
 
+// Set Starter pokemon
 static const u16 sStarterMonKanto[STARTER_MON_COUNT] =
 {
     SPECIES_BULBASAUR,
@@ -138,30 +139,30 @@ static const u16 sStarterMonHoenn[STARTER_MON_COUNT] =
 
 static const u16 sStarterMonSinnoh[STARTER_MON_COUNT] =
 {
-    SPECIES_TURTWIG,
-    SPECIES_CHIMCHAR,
-    SPECIES_PIPLUP,
+    SPECIES_SNOVER,
+    SPECIES_RIOLU,
+    SPECIES_BUIZEL,
 };
 
 static const u16 sStarterMonUnova[STARTER_MON_COUNT] =
 {
-    SPECIES_SNIVY,
-    SPECIES_TEPIG,
-    SPECIES_OSHAWOTT,
+    SPECIES_SEWADDLE,
+    SPECIES_LITWICK,
+    SPECIES_DUCKLETT,
 };
 
 static const u16 sStarterMonKalos[STARTER_MON_COUNT] =
 {
-    SPECIES_CHESPIN,
-    SPECIES_FENNEKIN,
-    SPECIES_FROAKIE,
+    SPECIES_SKIDDO,
+    SPECIES_LITLEO,
+    SPECIES_CLAUNCHER,
 };
 
 static const u16 sStarterMonAlola[STARTER_MON_COUNT] =
 {
-    SPECIES_ROWLET,
-    SPECIES_LITTEN,
-    SPECIES_POPPLIO,
+    SPECIES_BOUNSWEET,
+    SPECIES_ROCKRUFF,
+    SPECIES_MAREANIE,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
