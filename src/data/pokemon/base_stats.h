@@ -601,17 +601,19 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FEAROW] =
     {
         .baseHP        = 65,
-        .baseSpeed     = 100,
+
         .baseSpAttack  = 61,
         #ifdef REBALANCED_VERSION
-            .baseAttack    = 110,
+            .baseAttack    = 106,
             .baseDefense   = 75,
             .baseSpDefense = 71,
+            .baseSpeed     = 84,
             .abilities = {ABILITY_INTIMIDATE, ABILITY_KEEN_EYE, ABILITY_SNIPER},
         #else
             .baseAttack    = 90,
             .baseDefense   = 65,
             .baseSpDefense = 61,
+            .baseSpeed     = 100,
             .abilities = {ABILITY_KEEN_EYE, ABILITY_KEEN_EYE, ABILITY_SNIPER},
         #endif
         .type1 = TYPE_FLYING,
@@ -719,7 +721,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpAttack  = 90,
         .baseSpDefense = 80,
         #ifdef REBALANCED_VERSION
-            .baseSpeed     = 115,
+            .baseSpeed     = 116,
         #else
             .baseSpeed     = 100,
         #endif
@@ -1027,7 +1029,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 100,
         .baseSpDefense = 100,
         #ifdef REBALANCED_VERSION
-            .baseSpAttack  = 98,
+            .baseSpAttack  = 96,
             .type1 = TYPE_FIRE,
             .type2 = TYPE_FAIRY,
             .abilities = {ABILITY_FLASH_FIRE, ABILITY_PYROMANCY, ABILITY_DROUGHT},
@@ -1340,8 +1342,8 @@ const struct BaseStats gBaseStats[] =
         .baseDefense   = 60,
         .baseSpDefense = 75,
         #ifdef REBALANCED_VERSION
-            .baseSpAttack  = 100,
-            .baseSpeed     = 100,
+            .baseSpAttack  = 102,
+            .baseSpeed     = 98,
         #else
             .baseSpAttack  = 90,
             .baseSpeed     = 90,
