@@ -1561,10 +1561,10 @@ const struct BaseStats gBaseStats[] =
         .baseSpDefense = 70,
         #ifdef REBALANCED_VERSION
             .baseAttack    = 115,
-            .baseSpeed     = 115,
+            .baseSpeed     = 107,
         #else
             .baseAttack    = 82,
-            .baseSpAttack  = 95,
+            .baseSpeed  = 95,
         #endif  
         .type1 = TYPE_FIGHTING,
         .type2 = TYPE_FIGHTING,
@@ -2604,7 +2604,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpDefense = 115,
         #ifdef REBALANCED_VERSION
             .baseHP        = 95,
-            .baseSpAttack  = 120,
+            .baseSpAttack  = 113,
         #else
             .baseHP        = 85,
             .baseSpAttack  = 73,
@@ -3178,9 +3178,9 @@ const struct BaseStats gBaseStats[] =
         .baseDefense   = 65,
         .baseSpAttack  = 65,
         #ifdef REBALANCED_VERSION
-            .baseAttack    = 112,
+            .baseAttack    = 102,
             .baseSpDefense = 100,
-            .baseSpeed     = 98,
+            .baseSpeed     = 88,
         #else
             .baseAttack    = 92,
             .baseSpDefense = 80,
