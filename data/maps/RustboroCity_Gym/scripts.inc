@@ -317,7 +317,7 @@ RustboroCity_Gym_Text_Tips::
 	.string "I'm here to provide expert advice!\p"
 	.string "Roxanne, the Gym Leader, is a user\n"
 	.string "of Rock-type Pokémon.\p"
-	.string "She has a strong team of 4 Pokemon\n"
+	.string "She has a strong team of 3 Pokemon\n"
 	.string "with good type variety.\p"
 	.string "You should make sure your first\n"
 	.string "partner Pokémon has evolved once\l"

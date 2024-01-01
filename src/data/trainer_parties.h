@@ -2466,12 +2466,6 @@ static const struct TrainerMonItemCustomMoves sParty_Marc[] = { // Rustboro Gym
     },
     {
     .lvl = -3,
-    .species = SPECIES_ARCHEN,
-    .spread = SPREAD_15_IV_0_EV,
-    .moves = MOVE_ROCK_TOMB, MOVE_BITE, MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK
-    },
-    {
-    .lvl = -3,
     .species = SPECIES_SHIELDON,
     .spread = SPREAD_15_IV_0_EV,
     .moves = MOVE_TAUNT, MOVE_COUNTER, MOVE_ROCK_TOMB, MOVE_IRON_DEFENSE
@@ -2479,14 +2473,6 @@ static const struct TrainerMonItemCustomMoves sParty_Marc[] = { // Rustboro Gym
 };
 
 static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
-    {
-    .lvl = -2,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_CHESTO_BERRY,
-    .ability = 2, // Sand Stream
-    .spread = SPREAD_ROXANNE_ONE_MON,
-    .moves = MOVE_ROCK_TOMB, MOVE_STEALTH_ROCK, MOVE_MAGNITUDE, MOVE_REST
-    },
     {
     .lvl = -2,
     .species = SPECIES_ANORITH,
@@ -2507,7 +2493,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .lvl = 0,
     .species = SPECIES_NOSEPASS,
     .heldItem = ITEM_BERRY_JUICE,
-    .ability = 2, // Sand Force
+    .ability = 0, // Sturdy
     .spread = SPREAD_ROXANNE_NOSEPASS,
     .moves = MOVE_SANDSTORM, MOVE_ROCK_TOMB, MOVE_BULLDOZE, MOVE_FIRE_PUNCH
     }
