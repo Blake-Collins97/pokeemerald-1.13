@@ -14919,8 +14919,8 @@ static const struct TrainerMonItemCustomMoves sParty_TabithaMagmaHideout[] = {
     },
     {
     .lvl = 2,
-    .species = SPECIES_STEELIX,
-    .heldItem = ITEM_LEFTOVERS
+    .species = SPECIES_STEELIX_MEGA,
+    .heldItem = ITEM_LEFTOVERS,
     .ability = 2, // Sheer Force
     .spread = SPREAD_31_IV_HP_ATK_BRAVE,
     .moves = MOVE_GYRO_BALL, MOVE_DRILL_RUN, MOVE_ROCK_SLIDE, MOVE_FIRE_FANG
@@ -14946,7 +14946,7 @@ static const struct TrainerMonItemCustomMoves sParty_CourtneyMagmaHideout[] = {
     },
     {
     .lvl = 2, 
-    .species = SPECIES_HOUNDOOM,
+    .species = SPECIES_HOUNDOOM_MEGA,
     .heldItem = ITEM_CHARCOAL,
     .ability = 1, // Flash Fire
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
@@ -17885,9 +17885,9 @@ static const struct TrainerMonItemCustomMoves sParty_TabithaMossdeep[] = {
     },
     {
     .lvl = 2,
-    .species = SPECIES_STEELIX,
-    .heldItem = ITEM_LEFTOVERS
-    .ability = 0, // Strong Jaw -> Sand Force
+    .species = SPECIES_STEELIX_MEGA,
+    .heldItem = ITEM_LEFTOVERS,
+    .ability = 0, // Sand Force
     .spread = SPREAD_31_IV_HP_ATK_BRAVE,
     .moves = MOVE_GYRO_BALL, MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_SHORE_UP
     },
