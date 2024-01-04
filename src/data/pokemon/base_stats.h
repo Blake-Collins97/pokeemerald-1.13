@@ -9329,7 +9329,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_CRADILY] =
     {
         .baseAttack    = 81,
-        .baseDefense   = 102
+        .baseDefense   = 102,
         .baseSpDefense = 107,
         #ifdef REBALANCED_VERSION
             .baseHP        = 96,
