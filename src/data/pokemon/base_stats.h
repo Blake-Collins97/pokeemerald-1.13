@@ -1031,7 +1031,7 @@ const struct BaseStats gBaseStats[] =
         #ifdef REBALANCED_VERSION
             .baseSpAttack  = 96,
             .type1 = TYPE_FIRE,
-            .type2 = TYPE_FAIRY,
+            .type2 = TYPE_GHOST,
             .abilities = {ABILITY_FLASH_FIRE, ABILITY_PYROMANCY, ABILITY_DROUGHT},
         #else
             .baseSpAttack  = 81,
@@ -1606,14 +1606,14 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_ARCANINE] =
+    [SPECIES_ARCANINE] = // Pseudo  Legendary
     {
         .baseHP        = 105,
         .baseAttack    = 115,
         .baseDefense   = 82,
         .baseSpeed     = 95,
         .baseSpAttack  = 115,
-        .baseSpDefense = 88,
+        .baseSpDefense = 88, 
         .type1 = TYPE_FIRE,
         .type2 = TYPE_FIRE,
         .catchRate = 75,
@@ -1947,7 +1947,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_3,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_CLEAR_BODY, ABILITY_LIQUID_OOZE, ABILITY_RAIN_DISH},
@@ -1972,7 +1972,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_3,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_CLEAR_BODY, ABILITY_LIQUID_OOZE, ABILITY_RAIN_DISH},
@@ -2000,7 +2000,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SAND_STREAM},
+        .abilities = {ABILITY_SOLID_ROCK, ABILITY_STURDY, ABILITY_SAND_STREAM},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -2025,7 +2025,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SAND_STREAM},
+        .abilities = {ABILITY_SOLID_ROCK, ABILITY_STURDY, ABILITY_SAND_STREAM},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -2055,7 +2055,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SAND_STREAM},
+        .abilities = {ABILITY_SOLID_ROCK, ABILITY_STURDY, ABILITY_SAND_STREAM},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -2442,7 +2442,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_3,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_SHELL_ARMOR, ABILITY_SKILL_LINK, ABILITY_OVERCOAT},
@@ -2468,7 +2468,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_3,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_SHELL_ARMOR, ABILITY_SKILL_LINK, ABILITY_OVERCOAT},
@@ -2564,7 +2564,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
         .abilities = {ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_WEAK_ARMOR},
@@ -2991,7 +2991,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_LIGHTNING_ROD, ABILITY_ROCK_HEAD, ABILITY_RECKLESS},
@@ -3015,7 +3015,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_LIGHTNING_ROD, ABILITY_ROCK_HEAD, ABILITY_RECKLESS},
@@ -3221,7 +3221,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_3,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC},
@@ -3247,7 +3247,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_3,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC},
@@ -3401,7 +3401,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
         .abilities = {ABILITY_HYPER_CUTTER, ABILITY_MOLD_BREAKER, ABILITY_MOXIE},
@@ -3951,7 +3951,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_DRAGONITE] =
+    [SPECIES_DRAGONITE] = //Pseudo Legendary
     {
         .baseHP        = 91,
         .baseAttack    = 134,
@@ -5590,7 +5590,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
         .abilities = {ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SHEER_FORCE},
@@ -5749,7 +5749,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
         .abilities = {ABILITY_SWARM, ABILITY_GUTS, ABILITY_MOXIE},
@@ -6637,7 +6637,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_TYRANITAR] =
+    [SPECIES_TYRANITAR] = //Pseudo Legendary
     {
         .baseHP        = 100,
         .baseAttack    = 134,
@@ -8132,7 +8132,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_KEEN_EYE, ABILITY_STALL, ABILITY_PRANKSTER},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_MAGIC_BOUNCE, ABILITY_PRANKSTER},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },
@@ -8220,7 +8220,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_AGGRON] =
+    [SPECIES_AGGRON] = //Pseudo Legendary
     {
         .baseHP        = 110,
         .baseAttack    = 120,
@@ -8309,7 +8309,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS},
@@ -8337,7 +8337,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS},
@@ -8571,7 +8571,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_2,
         .eggGroup2 = EGG_GROUP_WATER_2,
         .abilities = {ABILITY_ROUGH_SKIN, ABILITY_ROUGH_SKIN, ABILITY_SPEED_BOOST},
@@ -8600,10 +8600,10 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_2,
         .eggGroup2 = EGG_GROUP_WATER_2,
-        .abilities = {ABILITY_ROUGH_SKIN, ABILITY_ROUGH_SKIN, ABILITY_SPEED_BOOST},
+        .abilities = {ABILITY_ROUGH_SKIN, ABILITY_STRONG_JAW, ABILITY_SPEED_BOOST},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
@@ -8632,17 +8632,19 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_WAILORD] =
+    [SPECIES_WAILORD] = //Pseudo Legendary
     {
         .baseHP        = 170,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseSpeed     = 60,
-        .baseSpAttack  = 115,
+        
         #ifdef REBALANCED_VERSION
             .baseDefense   = 85,
+            .baseSpAttack  = 110,
             .baseSpDefense = 85,
         #else
             .baseDefense   = 45,
+            .baseSpAttack  = 90,
             .baseSpDefense = 45,
         #endif
         .type1 = TYPE_WATER,
@@ -8681,7 +8683,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_OBLIVIOUS, ABILITY_SIMPLE, ABILITY_OWN_TEMPO},
@@ -8712,7 +8714,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         #ifdef REBALANCED_VERSION
@@ -8982,7 +8984,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_DRAGON,
         .abilities = {ABILITY_NATURAL_CURE, ABILITY_NATURAL_CURE, ABILITY_CLOUD_NINE},
@@ -9014,7 +9016,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_DRAGON,
         .bodyColor = BODY_COLOR_BLUE,
@@ -10109,7 +10111,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SALAMENCE] =
+    [SPECIES_SALAMENCE] = //Pseudo Legendary
     {
         .baseHP        = 95,
         .baseAttack    = 135,
@@ -10184,7 +10186,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_METAGROSS] =
+    [SPECIES_METAGROSS] = //Pseudo Legendary
     {
         .baseHP        = 80,
         .baseAttack    = 135,
@@ -11592,7 +11594,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 0,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
         .abilities = {ABILITY_RUN_AWAY, ABILITY_KLUTZ, ABILITY_LIMBER},
@@ -11624,7 +11626,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 140,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
         .bodyColor = BODY_COLOR_BROWN,
@@ -12052,7 +12054,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_GARCHOMP] =
+    [SPECIES_GARCHOMP] = //Pseudo Legendary
     {
         .baseHP        = 108,
         .baseAttack    = 130,
@@ -12118,7 +12120,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_UNDISCOVERED,
         .eggGroup2 = EGG_GROUP_UNDISCOVERED,
         .abilities = {ABILITY_STEADFAST, ABILITY_INNER_FOCUS, ABILITY_PRANKSTER},
@@ -12143,7 +12145,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
         .abilities = {ABILITY_STEADFAST, ABILITY_INNER_FOCUS, ABILITY_JUSTIFIED},
@@ -12216,7 +12218,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_BATTLE_ARMOR, ABILITY_SNIPER, ABILITY_KEEN_EYE},
@@ -12246,7 +12248,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_WATER_3,
         .abilities = {ABILITY_BATTLE_ARMOR, ABILITY_SNIPER, ABILITY_KEEN_EYE},
@@ -12395,7 +12397,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_MANTYKE] =
+    [SPECIES_MANTYKE] = // replaced with Mantyke x Charmander mon
     {
         .baseHP        = 60,
         .baseAttack    = 20,
@@ -12572,7 +12574,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_LIGHTNING_ROD, ABILITY_SOLID_ROCK, ABILITY_RECKLESS},
@@ -12800,14 +12802,20 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_MAMOSWINE] =
+    [SPECIES_MAMOSWINE] = // Psuedo Legendary
     {
         .baseHP        = 110,
         .baseAttack    = 130,
-        .baseDefense   = 80,
         .baseSpeed     = 80,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 60,
+        #ifdef REBALANCED_VERSION
+            .baseDefense   = 100,
+            .baseSpAttack  = 100,
+            .baseSpDefense = 80,
+        #else
+            .baseDefense   = 80,
+            .baseSpAttack  = 70,
+            .baseSpDefense = 60,
+        #endif
         .type1 = TYPE_ICE,
         .type2 = TYPE_GROUND,
         .catchRate = 50,
@@ -17090,7 +17098,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_HYDREIGON] =
+    [SPECIES_HYDREIGON] = //Pseudo Legendary
     {
         .baseHP        = 92,
         .baseAttack    = 105,
@@ -18524,12 +18532,17 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_DRAGALGE] =
     {
-        .baseHP        = 75,
         .baseAttack    = 75,
         .baseDefense   = 90,
         .baseSpeed     = 44,
-        .baseSpAttack  = 117,
         .baseSpDefense = 123,
+        #ifdef REBALANCED_VERSION
+        .baseHP        = 75,
+        .baseSpAttack  = 117,
+        #else
+        .baseHP        = 65,
+        .baseSpAttack  = 97,
+        #endif   
         .type1 = TYPE_POISON,
         .type2 = TYPE_DRAGON,
         .catchRate = 55,
@@ -18912,7 +18925,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_GOODRA] =
+    [SPECIES_GOODRA] = //Pseudo Legendary
     {
         .baseHP        = 90,
         .baseAttack    = 100,
@@ -20512,7 +20525,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_INNER_FOCUS, ABILITY_TELEPATHY, ABILITY_SYMBIOSIS},
@@ -20536,7 +20549,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_RECEIVER, ABILITY_RECEIVER, ABILITY_DEFIANT},
@@ -20790,7 +20803,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         .abilities = {ABILITY_COMATOSE, ABILITY_COMATOSE, ABILITY_COMATOSE},
@@ -21013,7 +21026,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_KOMMO_O] =
+    [SPECIES_KOMMO_O] = //Pseudo Legendary
     {
         .baseHP        = 75,
         .baseAttack    = 110,
@@ -22540,7 +22553,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_2,
         .eggGroup2 = EGG_GROUP_WATER_2,
         .abilities = {ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_PROPELLER_TAIL},
@@ -22564,7 +22577,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_2,
         .eggGroup2 = EGG_GROUP_WATER_2,
         .abilities = {ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_PROPELLER_TAIL},
@@ -23513,7 +23526,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_DRAGAPULT] =
+    [SPECIES_DRAGAPULT] = // Pseudo Legendary
     {
         .baseHP        = 88,
         .baseAttack    = 120,
@@ -24073,7 +24086,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
         .abilities = {ABILITY_AERILATE, ABILITY_AERILATE, ABILITY_AERILATE},
@@ -24177,13 +24190,13 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_AMPHAROS_MEGA] =
+    [SPECIES_AMPHAROS_MEGA] = // Psuedo Legendary
     {
         .baseHP        = 90,
         .baseAttack    = 95,
         .baseDefense   = 105,
         .baseSpeed     = 45,
-        .baseSpAttack  = 165,
+        .baseSpAttack  = 155,
         .baseSpDefense = 110,
         .type1 = TYPE_ELECTRIC,
         .type2 = TYPE_DRAGON,
@@ -24196,7 +24209,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER},
+            .abilities = {ABILITY_STATIC, ABILITY_MOLD_BREAKER, ABILITY_ADAPTABILITY},
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },
@@ -24206,14 +24219,13 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 75,
         .baseDefense   = 230,
         .baseSpAttack  = 55,
+        .baseSpDefense = 95,
         #ifdef REBALANCED_VERSION
-            .baseAttack    = 145,
-            .baseSpeed     = 20,
-            .baseSpDefense = 105,
+            .baseAttack    = 135,
+            .baseSpeed     = 10,
         #else
             .baseAttack    = 125,
             .baseSpeed     = 30,
-            .baseSpDefense = 95,
         #endif
         .type1 = TYPE_STEEL,
         .type2 = TYPE_GROUND,
@@ -24224,10 +24236,10 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_SAND_FORCE, ABILITY_SAND_FORCE, ABILITY_SAND_FORCE},
+        .abilities = {ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SHEER_FORCE},
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
     },
@@ -24272,7 +24284,7 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
         .abilities = {ABILITY_SKILL_LINK, ABILITY_SKILL_LINK, ABILITY_SKILL_LINK},
@@ -24283,15 +24295,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_HOUNDOOM_MEGA] =
     {
         .baseHP        = 75,
+        .baseAttack    = 90
         .baseDefense   = 90,
         .baseSpeed     = 115,
         .baseSpAttack  = 140,
         .baseSpDefense = 90,
-        #ifdef REBALANCED_VERSION
-            .baseAttack    = 100,
-        #else
-            .baseAttack    = 90,
-        #endif
         .type1 = TYPE_DARK,
         .type2 = TYPE_FIRE,
         .catchRate = 45,
@@ -24303,7 +24311,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER},
+        .abilities = {ABILITY_EARLY_BIRD, ABILITY_FLASH_FIRE, ABILITY_UNNERVE},
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
     },
@@ -24462,7 +24470,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_MAGIC_BOUNCE, ABILITY_PRANKSTER},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },
@@ -24577,7 +24585,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SHARPEDO_MEGA] =
+    [SPECIES_SHARPEDO_MEGA] = // Pseudo Legendary
     {
         .baseHP        = 70,
         .baseDefense   = 70,
@@ -24585,7 +24593,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpDefense = 65,
         #ifdef REBALANCED_VERSION
             .baseAttack    = 150,
-            .baseSpeed     = 115,
+            .baseSpeed     = 135,
         #else
             .baseAttack    = 140,
             .baseSpeed     = 105,
@@ -24599,15 +24607,15 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_WATER_2,
         .eggGroup2 = EGG_GROUP_WATER_2,
-        .abilities = {ABILITY_STRONG_JAW, ABILITY_STRONG_JAW, ABILITY_STRONG_JAW},
+        .abilities = {ABILITY_ROUGH_SKIN, ABILITY_STRONG_JAW, ABILITY_SPEED_BOOST},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
 
-    [SPECIES_CAMERUPT_MEGA] =
+    [SPECIES_CAMERUPT_MEGA] = // Pseudo Legendary
     {
         .baseAttack    = 120,
         .baseSpeed     = 20,
@@ -24630,10 +24638,10 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE},
+            .abilities = {ABILITY_SHEER_FORCE, ABILITY_SOLID_ROCK, ABILITY_ANGER_POINT},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -24646,7 +24654,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpAttack  = 110,
         .baseSpDefense = 105,
         #ifdef REBALANCED_VERSION
-            .baseSpeed     = 100,
+            .baseSpeed     = 90,
         #else
             .baseSpeed     = 80,
         #endif
@@ -24658,10 +24666,10 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_DRAGON,
-        .abilities = {ABILITY_PIXILATE, ABILITY_PIXILATE, ABILITY_PIXILATE},
+        .abilities = {ABILITY_LEVITATE, ABILITY_NATURAL_CURE, ABILITY_CLOUD_NINE},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
@@ -24728,7 +24736,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = TRUE,
     },
 
-    [SPECIES_GLALIE_MEGA] =
+    [SPECIES_GLALIE_MEGA] = // Pseudo Legendary
     {
         .baseHP        = 80,
         .baseDefense   = 80,
@@ -24754,7 +24762,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FAIRY,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_REFRIGERATE, ABILITY_REFRIGERATE, ABILITY_REFRIGERATE},
+            .abilities = {ABILITY_REFRIGERATE, ABILITY_ICE_BODY, ABILITY_STRONG_JAW},
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
     },
@@ -24857,7 +24865,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LOPUNNY_MEGA] =
+    [SPECIES_LOPUNNY_MEGA] = // Pseudo Legendary
     {
         .baseHP        = 65,
         .baseAttack    = 136,
@@ -24877,10 +24885,10 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 140,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_SCRAPPY, ABILITY_SCRAPPY, ABILITY_SCRAPPY},
+            .abilities = {ABILITY_CUTE_CHARM, ABILITY_SCRAPPY, ABILITY_LIMBER},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -24915,13 +24923,13 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LUCARIO_MEGA] =
+    [SPECIES_LUCARIO_MEGA] = // Pseudo Legendary
     {
         .baseHP        = 70,
-        .baseAttack    = 145,
+        .baseAttack    = 130,
         .baseDefense   = 88,
         .baseSpeed     = 112,
-        .baseSpAttack  = 140,
+        .baseSpAttack  = 130,
         .baseSpDefense = 70,
         .type1 = TYPE_FIGHTING,
         .type2 = TYPE_STEEL,
@@ -24932,24 +24940,24 @@ const struct BaseStats gBaseStats[] =
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 25,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY},
+        .abilities = {ABILITY_STEADFAST, ABILITY_INNER_FOCUS, ABILITY_ADAPTABILITY},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
 
-    [SPECIES_ABOMASNOW_MEGA] =
+    [SPECIES_ABOMASNOW_MEGA] = // Pseudo Legendary
     {
         .baseHP        = 90,
         .baseDefense   = 105,
         .baseSpeed     = 30,
         .baseSpDefense = 105,
         #ifdef REBALANCED_VERSION
-            .baseAttack    = 142,
-            .baseSpAttack  = 142,
-            .abilities = {ABILITY_WHITEOUT, ABILITY_WHITEOUT, ABILITY_WHITEOUT},
+            .baseAttack    = 135,
+            .baseSpAttack  = 135,
+            .abilities = {ABILITY_WHITEOUT, ABILITY_WHITEOUT, ABILITY_SOUNDPROOF},
         #else
             .baseAttack    = 132,
             .baseSpAttack  = 132,
@@ -25193,15 +25201,15 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_FLYGON_MEGA] =
+    [SPECIES_FLYGON_MEGA] = // Pseudo Legendary
     {
         .baseHP        = 80,
         .baseAttack    = 130,
         .baseSpAttack  = 120,
         .baseSpeed     = 110,
         #ifdef REBALANCED_VERSION
-            .baseDefense   = 100,
-            .baseSpDefense = 100,
+            .baseDefense   = 80,
+            .baseSpDefense = 80,
         #else
             .baseDefense   = 90,
             .baseSpDefense = 90,
@@ -25218,7 +25226,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_DRAGON,
-        .abilities = {ABILITY_SAND_SONG, ABILITY_SAND_SONG, ABILITY_SAND_SONG},
+        .abilities = {ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_SAND_SONG},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
