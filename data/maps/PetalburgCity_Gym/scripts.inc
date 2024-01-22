@@ -1443,6 +1443,9 @@ PetalburgCity_Gym_Text_NormanMegaBracelet:
 	.string "Here, take these Mega Stones too.$"
 
 PetalburgCity_Gym_Text_NormanWheneverReady:
+	.string "Also,\n"
+	.string "From here on out, all Gym battles\p"
+	.string "Will be Double Battles!\p"
 	.string "Now then, {PLAYER}!\n"
 	.string "I'm ready when you are!$"
 
