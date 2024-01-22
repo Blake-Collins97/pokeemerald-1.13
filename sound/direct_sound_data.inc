@@ -879,8 +879,8 @@ Cry_Scyther::
 	.incbin "sound/direct_sound_samples/cries/scyther.bin"
 
 	.align 2
-Cry_Jynx::
-	.incbin "sound/direct_sound_samples/cries/jynx.bin"
+Cry_Annihilape::
+	.incbin "sound/direct_sound_samples/cries/Annihilape.bin"
 
 	.align 2
 Cry_Electabuzz::

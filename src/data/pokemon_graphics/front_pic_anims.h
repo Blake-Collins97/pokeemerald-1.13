@@ -1505,7 +1505,7 @@ static const union AnimCmd sAnim_SCYTHER_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_JYNX_1[] =
+static const union AnimCmd sAnim_ANNIHILAPE_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
@@ -10991,9 +10991,9 @@ static const union AnimCmd *const sAnims_SCYTHER[] ={
     sAnim_SCYTHER_1,
 };
 
-static const union AnimCmd *const sAnims_JYNX[] ={
+static const union AnimCmd *const sAnims_ANNIHILAPE[] ={
     sAnim_GeneralFrame0,
-    sAnim_JYNX_1,
+    sAnim_ANNIHILAPE_1,
 };
 
 static const union AnimCmd *const sAnims_ELECTABUZZ[] ={
@@ -15902,7 +15902,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(STARMIE),
     ANIM_CMD(MR_MIME),
     ANIM_CMD(SCYTHER),
-    ANIM_CMD(JYNX),
+    ANIM_CMD(ANNIHILAPE),
     ANIM_CMD(ELECTABUZZ),
     ANIM_CMD(MAGMAR),
     ANIM_CMD(PINSIR),

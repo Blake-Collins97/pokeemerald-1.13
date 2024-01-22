@@ -123,7 +123,7 @@ gCryTable::
 	cry Cry_Starmie
 	cry Cry_MrMime
 	cry Cry_Scyther
-	cry Cry_Jynx
+	cry Cry_Annihilape
 	cry Cry_Electabuzz
 	cry Cry_Magmar
 	cry Cry_Pinsir
@@ -1405,7 +1405,7 @@ gCryTable2::
 	cry2 Cry_Starmie
 	cry2 Cry_MrMime
 	cry2 Cry_Scyther
-	cry2 Cry_Jynx
+	cry2 Cry_Annihilape
 	cry2 Cry_Electabuzz
 	cry2 Cry_Magmar
 	cry2 Cry_Pinsir

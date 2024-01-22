@@ -620,7 +620,7 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x88,
         .y_offset = 3,
     },
-    [SPECIES_JYNX] =
+    [SPECIES_ANNIHILAPE] =
     {
         .size = 0x78,
         .y_offset = 3,

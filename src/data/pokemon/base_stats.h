@@ -3307,31 +3307,27 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_JYNX] =
+    [SPECIES_ANNIHILAPE] = //replaced Annihilape
     {
-        .baseHP        = 65,
-        .baseAttack    = 50,
-        .baseDefense   = 35,
-        .baseSpAttack  = 115,
-        .baseSpDefense = 95,
-        #ifdef REBALANCED_VERSION
-            .baseSpeed     = 115,         
-        #else
-            .baseSpeed     = 95,          
-        #endif
-        .type1 = TYPE_ICE,
-        .type2 = TYPE_PSYCHIC,
-        .catchRate = 45,
+        .baseHP        = 110,
+        .baseAttack    = 115,
+        .baseDefense   = 80,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 90,
+        .baseSpeed     = 90,         
+        .type1 = TYPE_FIGHTING,
+        .type2 = TYPE_GHOST,
+        .catchRate = 75,
         .expYield = 159,
-        .evYield_SpAttack  = 2,
-        .genderRatio = MON_FEMALE,
-        .eggCycles = 25,
+        .evYield_Attack    = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
-        .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_OBLIVIOUS, ABILITY_FOREWARN, ABILITY_DRY_SKIN},
-        .bodyColor = BODY_COLOR_RED,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        .abilities = {ABILITY_VITAL_SPIRIT, ABILITY_ANGER_POINT, ABILITY_DEFIANT},
+        .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
 

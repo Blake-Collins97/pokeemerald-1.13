@@ -8454,7 +8454,7 @@ static const struct TrainerMonItemCustomMoves sParty_Alix[] = {
     },
     {
     .lvl = -2,
-    .species = SPECIES_JYNX,
+    .species = SPECIES_GLACEON,
     .spread = SPREAD_31_IV_60_EV,
     .moves = MOVE_LOVELY_KISS, MOVE_DREAM_EATER, MOVE_FREEZE_DRY, MOVE_NASTY_PLOT
     }
@@ -13453,7 +13453,7 @@ static const struct TrainerMonItemCustomMoves sParty_Leah[] = {
     },
     {
     .lvl = -3,
-    .species = SPECIES_JYNX,
+    .species = SPECIES_FROSLASS,
     .spread = SPREAD_31_IV_80_EV,
     .moves = MOVE_FREEZE_DRY, MOVE_PSYCHIC, MOVE_LOVELY_KISS, MOVE_NASTY_PLOT
     }
@@ -17578,7 +17578,7 @@ static const struct TrainerMonItemCustomMoves sParty_Blake[] = { // with Samanth
 static const struct TrainerMonItemCustomMoves sParty_Macey[] = { // with Clifford
     {
     .lvl = -2,
-    .species = SPECIES_JYNX,
+    .species = SPECIES_FROSLASS,
     .heldItem = ITEM_ICE_GEM,
     .ability = 2, // Dry Skin
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
@@ -19348,7 +19348,7 @@ static const struct TrainerMonItemCustomMoves sParty_Dianne[] = { // with Felix
 static const struct TrainerMonItemCustomMoves sParty_Felix[] = { // with Dianne
     {
     .lvl = -1,
-    .species = SPECIES_JYNX,
+    .species = SPECIES_FROSLASS,
     .heldItem = ITEM_LIGHT_CLAY,
     .ability = 2, // Dry Skin
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,

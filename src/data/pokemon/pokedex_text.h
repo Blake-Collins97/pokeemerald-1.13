@@ -742,11 +742,11 @@ const u8 gScytherPokedexText[] = _(
     "The scythes can slice through thick logs\n"
     "in one wicked stroke.");
 
-const u8 gJynxPokedexText[] = _(
-    "A Jynx sashays rhythmically as if it were\n"
-    "dancing. Its motions are so bouncingly\n"
-    "alluring, people seeing it are compelled to\n"
-    "shake their hips without noticing.");
+const u8 gAnnihilapePokedexText[] = _(
+    "When its anger rose beyond a critical \n"
+    "point, this Pokémon gained power\n"
+    "that is unfettered by the\n"
+    "limits of its physical body.");
 
 const u8 gElectabuzzPokedexText[] = _(
     "When a storm approaches, it competes with\n"
