@@ -1881,7 +1881,7 @@ const u32 gTMHMLearnsets[][4] =
                                         | TMHM1(TM58_ENDURE)
                                         | TMHM1(TM62_ACROBATICS)
                                         | TMHM1(TM63_ROCK_SLIDE),
-                                        | TMHM2(TM66_PAYBACK)
+                                          TMHM2(TM66_PAYBACK)
                                         | TMHM2(TM68_GIGA_IMPACT)
                                         | TMHM2(TM71_STONE_EDGE)
                                         | TMHM2(TM78_BULLDOZE)
@@ -4230,7 +4230,7 @@ const u32 gTMHMLearnsets[][4] =
                                         | TMHM1(TM61_WILL_O_WISP)                                        
                                         | TMHM1(TM62_ACROBATICS)
                                         | TMHM1(TM63_ROCK_SLIDE),
-                                        | TMHM2(TM66_PAYBACK)
+                                          TMHM2(TM66_PAYBACK)
                                         | TMHM2(TM68_GIGA_IMPACT)
                                         | TMHM2(TM71_STONE_EDGE)
                                         | TMHM2(TM78_BULLDOZE)
