@@ -1265,7 +1265,7 @@ static const union AnimCmd sAnim_HITMONCHAN_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_LICKITUNG_1[] =
+static const union AnimCmd sAnim_WATTREL_1[] =
 {
     ANIMCMD_FRAME(0, 28),
     ANIMCMD_FRAME(1, 32),
@@ -10903,9 +10903,9 @@ static const union AnimCmd *const sAnims_HITMONCHAN[] ={
     sAnim_HITMONCHAN_1,
 };
 
-static const union AnimCmd *const sAnims_LICKITUNG[] ={
+static const union AnimCmd *const sAnims_WATTREL[] ={
     sAnim_GeneralFrame0,
-    sAnim_LICKITUNG_1,
+    sAnim_WATTREL_1,
 };
 
 static const union AnimCmd *const sAnims_KOFFING[] ={
@@ -15886,7 +15886,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(MAROWAK),
     ANIM_CMD(HITMONLEE),
     ANIM_CMD(HITMONCHAN),
-    ANIM_CMD(LICKITUNG),
+    ANIM_CMD(WATTREL),
     ANIM_CMD(KOFFING),
     ANIM_CMD(WEEZING),
     ANIM_CMD(RHYHORN),

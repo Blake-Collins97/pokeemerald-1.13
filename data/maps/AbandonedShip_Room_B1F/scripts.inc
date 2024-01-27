@@ -3,7 +3,7 @@ AbandonedShip_Room_B1F_MapScripts:: @ 82380A5
 
 AbandonedShip_Room_B1F_EventScript_Spiritomb::
 	lock
-	checkPartyHasSpecies SPECIES_LICKITUNG
+	checkPartyHasSpecies SPECIES_WATTREL
 	compare VAR_RESULT, TRUE
 	goto_if_eq AbandonedShip_Room_B1F_EventScript_CheckOddKeystone
 	checkPartyHasSpecies SPECIES_SLUGMA

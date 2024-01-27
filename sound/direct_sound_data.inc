@@ -815,8 +815,8 @@ Cry_Hitmonchan::
 	.incbin "sound/direct_sound_samples/cries/hitmonchan.bin"
 
 	.align 2
-Cry_Lickitung::
-	.incbin "sound/direct_sound_samples/cries/lickitung.bin"
+Cry_Wattrel::
+	.incbin "sound/direct_sound_samples/cries/wattrel.bin"
 
 	.align 2
 Cry_Koffing::

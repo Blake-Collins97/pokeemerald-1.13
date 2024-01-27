@@ -540,7 +540,7 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x77,
         .y_offset = 6,
     },
-    [SPECIES_LICKITUNG] =
+    [SPECIES_WATTREL] =
     {
         .size = 0x85,
         .y_offset = 13,

@@ -646,11 +646,11 @@ const u8 gHitmonchanPokedexText[] = _(
     "world champion. Having an indomitable\n"
     "spirit means that it will never give up.");
 
-const u8 gLickitungPokedexText[] = _(
-    "Whenever it sees something unfamiliar,\n"
-    "it always licks the object because it\n"
-    "memorizes things by texture and taste.\n"
-    "It is somewhat put off by sour things.");
+const u8 gWattrelPokedexText[] = _(
+    "When its wings catch the wind, the bones\n"
+    "within produce electricity,\n"
+    "This Pokémon dives into the ocean, \n"
+    "catching prey by electrocuting them.");
 
 const u8 gKoffingPokedexText[] = _(
     "Getting up close to a Koffing will give\n"

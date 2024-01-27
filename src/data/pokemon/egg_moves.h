@@ -542,7 +542,7 @@ const u16 gEggMoves[] = {
         MOVE_DETECT,
         MOVE_CHIP_AWAY),
 
-    egg_moves(LICKITUNG,
+    egg_moves(WATTREL,
         MOVE_BELLY_DRUM,
         MOVE_MAGNITUDE,
         MOVE_BODY_SLAM,

@@ -1296,12 +1296,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 2,
     },
 
-    [NATIONAL_DEX_LICKITUNG] =
+    [NATIONAL_DEX_WATTREL] =
     {
         .categoryName = _("Licking"),
         .height = 12,
         .weight = 655,
-        .description = gLickitungPokedexText,
+        .description = gWattrelPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,

@@ -107,7 +107,7 @@ gCryTable::
 	cry Cry_Marowak
 	cry Cry_Hitmonlee
 	cry Cry_Hitmonchan
-	cry Cry_Lickitung
+	cry Cry_Wattrel
 	cry Cry_Koffing
 	cry Cry_Weezing
 	cry Cry_Rhyhorn
@@ -1389,7 +1389,7 @@ gCryTable2::
 	cry2 Cry_Marowak
 	cry2 Cry_Hitmonlee
 	cry2 Cry_Hitmonchan
-	cry2 Cry_Lickitung
+	cry2 Cry_Wattrel
 	cry2 Cry_Koffing
 	cry2 Cry_Weezing
 	cry2 Cry_Rhyhorn
