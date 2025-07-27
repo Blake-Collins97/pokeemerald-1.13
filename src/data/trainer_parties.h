@@ -5600,7 +5600,7 @@ static const struct TrainerMonItemCustomMoves sParty_Lydia4[] = {
     {
     .lvl = -1,
     .species = SPECIES_DRAGONITE,
-    .ability = 2, // Marvel Scale
+    .ability = 1, // Marvel Scale
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,    
     .moves = MOVE_EXTREME_SPEED, MOVE_WATERFALL, MOVE_IRON_TAIL, MOVE_OUTRAGE
     }
@@ -12630,7 +12630,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     .lvl = 2,
     .species = SPECIES_ALTARIA,
     .heldItem = ITEM_FOCUS_SASH,
-    .ability = 2, // Cloud Nine
+    .ability = 1, // Friend Guard
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
     .moves = MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_DRAGON_RUSH, MOVE_DRAGON_DANCE
     },
@@ -12638,9 +12638,9 @@ static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     .lvl = 0,
     .species = SPECIES_DRAGONITE,
     .heldItem = ITEM_LIFE_ORB,
-    .ability = 2, // Multiscale
+    .ability = 1, // Multiscale
     .spread = SPREAD_31_IV_HP_ATK_MIXED,
-    .moves = MOVE_DRAGON_CLAW, MOVE_EXTREME_SPEED, MOVE_AIR_SLASH, MOVE_HYPER_BEAM
+    .moves = MOVE_DRAGON_CLAW, MOVE_EXTREME_SPEED, MOVE_DRAGON_DANCE, MOVE_HYPER_BEAM
     },
     {
     .lvl = 1,
@@ -12681,7 +12681,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winona2[] = { // singles
     .lvl = 0,
     .species = SPECIES_DRAGONITE,
     .heldItem = ITEM_CHOICE_BAND,
-    .ability = 2, // Multiscale
+    .ability = 1, // Multiscale
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
     .moves = MOVE_OUTRAGE, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_EXTREME_SPEED
     },
@@ -12713,9 +12713,9 @@ static const struct TrainerMonItemCustomMoves sParty_Winona2[] = { // singles
     .lvl = 2,
     .species = SPECIES_ALTARIA_MEGA,
     .heldItem = ITEM_LEFTOVERS,
-    .ability = 0, // Pixilate
+    .ability = 0, // levitate
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_ROOST, MOVE_DRAGON_DANCE
+    .moves = MOVE_PLAY_ROUGH, MOVE_EARTHQUAKE, MOVE_ROOST, MOVE_DRAGON_DANCE
     }
 };
 
@@ -12740,7 +12740,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winona3[] = { // Doubles
     .lvl = 1,
     .species = SPECIES_DRAGONITE,
     .heldItem = ITEM_YACHE_BERRY,
-    .ability = 2, // Multiscale
+    .ability = 1, // Multiscale
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_WING_ATTACK, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_EXTREME_SPEED
     },
@@ -12764,9 +12764,9 @@ static const struct TrainerMonItemCustomMoves sParty_Winona3[] = { // Doubles
     .lvl = 3,
     .species = SPECIES_ALTARIA_MEGA,
     .heldItem = ITEM_LEFTOVERS,
-    .ability = 2, // Cloud Nine
+    .ability = 0, // Levitate
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
-    .moves = MOVE_HYPER_VOICE, MOVE_FIRE_BLAST, MOVE_ROOST, MOVE_ICE_BEAM
+    .moves = MOVE_DAZZLING_GLEAM, MOVE_FIRE_BLAST, MOVE_ROOST, MOVE_ICE_BEAM
     }
 };
 
@@ -16240,7 +16240,7 @@ static const struct TrainerMonItemCustomMoves sParty_Ruben[] = { // Ace
     .lvl = -1,
     .species = SPECIES_DRAGONITE,
     .heldItem = ITEM_YACHE_BERRY,
-    .ability = 2, // Multiscale
+    .ability = 1, // Multiscale
     .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
     .moves = MOVE_OUTRAGE, MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_EXTREME_SPEED
     },
@@ -18947,7 +18947,7 @@ static const struct TrainerMonItemCustomMoves sParty_Nicolas3[] = {
     .species = SPECIES_ALTARIA_MEGA,
     .heldItem = ITEM_LEFTOVERS,
     .spread = SPREAD_31_IV_HP_SPATK_MODEST,
-    .moves = MOVE_HYPER_VOICE, MOVE_FIRE_BLAST, MOVE_COTTON_GUARD, MOVE_ROOST
+    .moves = MOVE_DAZZLING_GLEAM, MOVE_FIRE_BLAST, MOVE_COTTON_GUARD, MOVE_ROOST
     },
     {
     .lvl = 0,
@@ -18960,7 +18960,7 @@ static const struct TrainerMonItemCustomMoves sParty_Nicolas3[] = {
     .lvl = 0,
     .species = SPECIES_DRAGONITE,
     .heldItem = ITEM_YACHE_BERRY,
-    .ability = 2, // Multiscale
+    .ability = 1, // Multiscale
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_OUTRAGE, MOVE_IRON_TAIL, MOVE_FIRE_PUNCH, MOVE_DRAGON_DANCE
     }
@@ -18987,7 +18987,7 @@ static const struct TrainerMonItemCustomMoves sParty_Nicolas4[] = {
     .species = SPECIES_ALTARIA_MEGA,
     .heldItem = ITEM_LEFTOVERS,
     .spread = SPREAD_31_IV_HP_SPATK_MODEST,
-    .moves = MOVE_HYPER_VOICE, MOVE_FIRE_BLAST, MOVE_COTTON_GUARD, MOVE_ROOST
+    .moves = MOVE_DAZZLING_GLEAM, MOVE_FIRE_BLAST, MOVE_COTTON_GUARD, MOVE_ROOST
     },
     {
     .lvl = 0,
@@ -19000,17 +19000,17 @@ static const struct TrainerMonItemCustomMoves sParty_Nicolas4[] = {
     .lvl = 0,
     .species = SPECIES_DRAGONITE,
     .heldItem = ITEM_YACHE_BERRY,
-    .ability = 2, // Multiscale
+    .ability = 1, // Multiscale
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_OUTRAGE, MOVE_IRON_TAIL, MOVE_FIRE_PUNCH, MOVE_DRAGON_DANCE
     },
-/*     {
+    {
     .lvl = 0,
     .species = SPECIES_DURALUDON,
     .heldItem = ITEM_SALAC_BERRY,
     .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
     .moves = MOVE_FLASH_CANNON, MOVE_DRACO_METEOR, MOVE_THUNDER, MOVE_BODY_PRESS
-    } */
+    }
 };
 
 static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
@@ -19165,7 +19165,7 @@ static const struct TrainerMonItemCustomMoves sParty_Shannon[] = {
     .lvl = -1,
     .species = SPECIES_DRAGONITE,
     .heldItem = ITEM_LUM_BERRY,
-    .ability = 2, // Multiscale
+    .ability = 1, // Multiscale
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_OUTRAGE, MOVE_WING_ATTACK, MOVE_EARTHQUAKE, MOVE_EXTREME_SPEED
     },
@@ -19842,7 +19842,7 @@ static const struct TrainerMonItemCustomMoves sParty_Leonard[] = { // with Phill
 
 // Ever Grande/Pokemon League
 
-static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
+static const struct TrainerMonItemCustomMoves sParty_Sidney[] = { //Singles
     {
     .lvl = 1,
     .species = SPECIES_TYRANITAR,
@@ -19886,7 +19886,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     },
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
+static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = { //Singles
 
     {
     .lvl = 1,
@@ -19929,7 +19929,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     },
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
+static const struct TrainerMonItemCustomMoves sParty_Glacia[] = { //Singles
     {
     .lvl = 1,
     .species = SPECIES_NINETALES_ALOLAN,
@@ -19972,7 +19972,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     },
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
+static const struct TrainerMonItemCustomMoves sParty_Drake[] = { //singles
     {
     .lvl = 1,
     .species = SPECIES_STEELIX,
@@ -20286,7 +20286,7 @@ static const struct TrainerMonItemCustomMoves sParty_GretaSlateport[] = {
     .lvl = 0,
     .species = SPECIES_GENGAR,
     .heldItem = ITEM_LIFE_ORB,
-    .ability = 0, // Levitate -> Shadow Tag
+    .ability = 0, // Levitate 
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
     .moves = MOVE_SHADOW_BALL, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_NASTY_PLOT
     },
