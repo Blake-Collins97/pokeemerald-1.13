@@ -3602,7 +3602,7 @@ const u32 gTMHMLearnsets[][4] =
                                         | TMHM1(TM58_ENDURE)
                                         | TMHM1(TM60_DRAIN_PUNCH)
                                         | TMHM1(TM63_ROCK_SLIDE),
-                                        |  TMHM2(TM71_STONE_EDGE)
+                                          TMHM2(TM71_STONE_EDGE)
                                         | TMHM2(TM78_BULLDOZE)
                                         | TMHM2(TM88_LOW_SWEEP)
                                         | TMHM2(TM90_SUBSTITUTE)
@@ -3629,7 +3629,7 @@ const u32 gTMHMLearnsets[][4] =
                                         | TMHM1(TM49_SLEEP_TALK)
                                         | TMHM1(TM58_ENDURE)
                                         | TMHM1(TM62_ACROBATICS),
-                                        |  TMHM2(TM72_VOLT_SWITCH)
+                                          TMHM2(TM72_VOLT_SWITCH)
                                         | TMHM2(TM73_THUNDER_WAVE)
                                         | TMHM2(TM90_SUBSTITUTE)
                                         | TMHM2(HM02_FLY)
