@@ -13163,7 +13163,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_REGIGIGAS] =
     {
-        .baseHP        = 120,
+        .baseHP        = 140,
         .baseAttack    = 160,
         .baseDefense   = 110,
         .baseSpeed     = 25,
@@ -23701,7 +23701,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_REGIELEKI] =
     {
-        .baseHP        = 80,
+        .baseHP        = 100,
         .baseAttack    = 100,
         .baseDefense   = 50,
         .baseSpeed     = 200,
@@ -23727,10 +23727,10 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 200,
         .baseAttack    = 100,
-        .baseDefense   = 50,
+        .baseDefense   = 60,
         .baseSpeed     = 80,
         .baseSpAttack  = 100,
-        .baseSpDefense = 50,
+        .baseSpDefense = 60,
         .type1 = TYPE_DRAGON,
         .type2 = TYPE_DRAGON,
         .catchRate = 3,
