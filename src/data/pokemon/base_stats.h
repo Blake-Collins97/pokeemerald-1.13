@@ -1908,7 +1908,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_VICTREEBEL] =
     {
-        .baseHP        = 1100,
+        .baseHP        = 110,
         .baseAttack    = 105,
         .baseDefense   = 75,
         .baseSpeed     = 40,
