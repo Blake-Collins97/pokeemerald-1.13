@@ -3602,7 +3602,7 @@ const u32 gTMHMLearnsets[][4] =
                                         | TMHM1(TM58_ENDURE)
                                         | TMHM1(TM60_DRAIN_PUNCH)
                                         | TMHM1(TM63_ROCK_SLIDE),
-                                          TMHM2(TM71_STONE_EDGE)
+                                        |  TMHM2(TM71_STONE_EDGE)
                                         | TMHM2(TM78_BULLDOZE)
                                         | TMHM2(TM88_LOW_SWEEP)
                                         | TMHM2(TM90_SUBSTITUTE)
@@ -3635,7 +3635,7 @@ const u32 gTMHMLearnsets[][4] =
                                         | TMHM2(HM02_FLY)
                                         | TMHM2(HM05_FLASH)),
     [SPECIES_KOFFING]   = TMHM_LEARNSET (TMHM1(TM06_TOXIC)
-                                        | TMHM 1(TM10_HIDDEN_POWER)
+                                        | TMHM1(TM10_HIDDEN_POWER)
                                         | TMHM1(TM11_SUNNY_DAY)
                                         | TMHM1(TM12_TAUNT)
                                         | TMHM1(TM17_PROTECT)
