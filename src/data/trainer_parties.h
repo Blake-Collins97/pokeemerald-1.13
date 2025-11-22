@@ -19840,7 +19840,7 @@ static const struct TrainerMonItemCustomMoves sParty_Leonard[] = { // with Phill
     }
 };
 
-// Ever Grande/Pokemon League
+// Ever Grande/Pokemon League / Elite 4
 
 static const struct TrainerMonItemCustomMoves sParty_Sidney[] = { //Singles
     {
@@ -20015,7 +20015,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = { //singles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
+static const struct TrainerMonItemCustomMoves sParty_Wallace[] = { //Singles
     {
     .lvl = 2,
     .species = SPECIES_HARIYAMA,
