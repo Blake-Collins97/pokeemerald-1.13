@@ -8899,14 +8899,17 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
             dmg = ApplyModifier(UQ_4_12(0.5), dmg);
     }
 
-    // check stab
+    // Check stab STAB
+    // Default is 2.0 for adaptability and 1.5
+    // Changes so Monotypes have a stronger stab
     if (IS_BATTLER_OF_TYPE(battlerAtk, moveType) && move != MOVE_STRUGGLE)
     {
         if (abilityAtk == ABILITY_ADAPTABILITY)
-            MulModifier(&finalModifier, UQ_4_12(2.0));
+            MulModifier(&finalModifier, UQ_4_12(1.75)); // Default is 2.0
+        else if (attacker->type1 == attacker->type2)    // New line for monotypes to have extra STAB damage
+            MulModifier(&finalModifier, UQ_4_12(1.5));  // Default is 1.5
         else
-            MulModifier(&finalModifier, UQ_4_12(1.5));
-    }
+            MulModifier(&finalModifier, UQ_4_12(1.3));  // Default is 1.5
 
     // reflect, light screen, aurora veil
     if (((gSideStatuses[defSide] & SIDE_STATUS_REFLECT && IS_MOVE_PHYSICAL(move))
@@ -9051,11 +9054,12 @@ s32 CalculateMoveDamage(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, s32
         gBattleMovePower = CalcMoveBasePowerAfterModifiers(move, battlerAtk, battlerDef, moveType, updateFlags);
 
     // long dmg basic formula
+    // Damage = ((((2 * Level / 5 + 2) * Power * Attack / Defense) / 50) + 2) × Modifiers
     dmg = ((gBattleMons[battlerAtk].level * 2) / 5) + 2;
     dmg *= gBattleMovePower;
     dmg *= CalcAttackStat(move, battlerAtk, battlerDef, moveType, isCrit, updateFlags);
     dmg /= CalcDefenseStat(move, battlerAtk, battlerDef, moveType, isCrit, updateFlags);
-    dmg = (dmg / 50) + 2;
+    dmg = (dmg / 75) + 2; // base is (dmg / 50) +2 ; changes reduce battle damage
 
     // Calculate final modifiers.
     dmg = CalcFinalDmg(dmg, move, battlerAtk, battlerDef, moveType, typeEffectivenessModifier, isCrit, updateFlags);
