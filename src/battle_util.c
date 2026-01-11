@@ -8903,14 +8903,15 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
     // Default is 2.0 for adaptability and 1.5
     // Changes so Monotypes have a stronger stab
     if (IS_BATTLER_OF_TYPE(battlerAtk, moveType) && move != MOVE_STRUGGLE)
+if (IS_BATTLER_OF_TYPE(battlerAtk, moveType) && move != MOVE_STRUGGLE)
     {
-        if (abilityAtk == ABILITY_ADAPTABILITY)
-            MulModifier(&finalModifier, UQ_4_12(1.75)); // Default is 2.0
-        else if (attacker->type1 == attacker->type2)    // New line for monotypes to have extra STAB damage
-            MulModifier(&finalModifier, UQ_4_12(1.5));  // Default is 1.5
-        else
-            MulModifier(&finalModifier, UQ_4_12(1.3));  // Default is 1.5
-
+    if (abilityAtk == ABILITY_ADAPTABILITY)
+        MulModifier(&finalModifier, UQ_4_12(1.75)); // Default 2.0
+    else if (gBattleMons[battlerAtk].type1 == gBattleMons[battlerAtk].type2)
+        MulModifier(&finalModifier, UQ_4_12(1.5));  // Monotype bonus
+    else
+        MulModifier(&finalModifier, UQ_4_12(1.3));  // Normal STAB
+    }
     // reflect, light screen, aurora veil
     if (((gSideStatuses[defSide] & SIDE_STATUS_REFLECT && IS_MOVE_PHYSICAL(move))
             || (gSideStatuses[defSide] & SIDE_STATUS_LIGHTSCREEN && IS_MOVE_SPECIAL(move))
