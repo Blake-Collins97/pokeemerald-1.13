@@ -3346,8 +3346,7 @@ u8 AtkCanceller_UnableToUseMove(void)
             }
         case CANCELLER_TRUANT: // truant
 
-            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
-                && gDisableStructs[gBattlerAttacker].truantCounter)
+            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT && gDisableStructs[gBattlerAttacker].truantCounter)
             {
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
@@ -3368,11 +3367,11 @@ u8 AtkCanceller_UnableToUseMove(void)
                 gBattlescriptCurrInstr = BattleScript_TruantLoafingAround;
                 gMoveResultFlags |= MOVE_RESULT_MISSED;
                 effect = 1;
-            }
-    gBattleStruct->atkCancellerTracker++;
+            gBattleStruct->atkCancellerTracker++;
     break;
 
         case CANCELLER_RECHARGE: // recharge
+
             if (gBattleMons[gBattlerAttacker].status2 & STATUS2_RECHARGE)
             {
                 gBattleMons[gBattlerAttacker].status2 &= ~(STATUS2_RECHARGE);
