@@ -3352,15 +3352,23 @@ u8 AtkCanceller_UnableToUseMove(void)
                 if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
                 {
                     u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4;
+                    if (healAmount == 0)
+                        healAmount = 1; // always heal at least 1 HP
 
-                    gBattleMons[gBattlerAttacker].hp += healAmount;
-                    if (gBattleMons[gBattlerAttacker].hp > gBattleMons[gBattlerAttacker].maxHP)
-                        gBattleMons[gBattlerAttacker].hp = gBattleMons[gBattlerAttacker].maxHP;
+                    gBattleMoveDamage = -healAmount;   // negative = heal
+                    gBattlerAbility = gBattlerAttacker;
 
-                    gBattleMoveDamage = 0; // prevents damage text glitches
+                    // Reuse existing heal popup script
+                    gBattlescriptCurrInstr = BattleScript_LeftoversHeal;
+                    
                     gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE;
+                    effect = 1;
+
+                    // IMPORTANT: break here to play heal animation first
+                    break;
                 }
 
+                // Loafing behavior
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
@@ -3369,8 +3377,9 @@ u8 AtkCanceller_UnableToUseMove(void)
                 gMoveResultFlags |= MOVE_RESULT_MISSED;
                 effect = 1;
             }
-            gBattleStruct->atkCancellerTracker++;
-            break;
+    gBattleStruct->atkCancellerTracker++;
+    break;
+
         case CANCELLER_RECHARGE: // recharge
             if (gBattleMons[gBattlerAttacker].status2 & STATUS2_RECHARGE)
             {
