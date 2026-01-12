@@ -3351,12 +3351,14 @@ u8 AtkCanceller_UnableToUseMove(void)
                 // Heal 1/4 max HP on loafing turn
                 if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
                 {
-                    u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4; // 25% heal
-                    gBattleMoveDamage = -healAmount; // negative = heal
-                    gBattlerAbility = gBattlerAttacker;
-                    gBattlescriptCurrInstr = BattleScript_LeftoversHeal;
-                    effect = 1;
-                    break; // exit switch, run heal script
+                    u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4;
+
+                    gBattleMons[gBattlerAttacker].hp += healAmount;
+                    if (gBattleMons[gBattlerAttacker].hp > gBattleMons[gBattlerAttacker].maxHP)
+                        gBattleMons[gBattlerAttacker].hp = gBattleMons[gBattlerAttacker].maxHP;
+
+                    gBattleMoveDamage = 0; // prevents damage text glitches
+                    gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE;
                 }
 
                 CancelMultiTurnMoves(gBattlerAttacker);
