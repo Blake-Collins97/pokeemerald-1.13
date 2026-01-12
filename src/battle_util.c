@@ -3345,28 +3345,20 @@ u8 AtkCanceller_UnableToUseMove(void)
                 effect = 2;
             }
         case CANCELLER_TRUANT: // truant
+
             if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
                 && gDisableStructs[gBattlerAttacker].truantCounter)
             {
-                // Heal 1/4 max HP on loafing turn
-                if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
-                {
-                    u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4;
-                    if (healAmount == 0)
-                        healAmount = 1; // always heal at least 1 HP
-
-                    gBattleMoveDamage = -healAmount;   // negative = heal
-                    gBattlerAbility = gBattlerAttacker;
-
-                    // Reuse existing heal popup script
-                    gBattlescriptCurrInstr = BattleScript_LeftoversHeal;
-                    
-                    gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE;
-                    effect = 1;
-
-                    // IMPORTANT: break here to play heal animation first
-                    break;
-                }
+                CancelMultiTurnMoves(gBattlerAttacker);
+                gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
+                gBattlerAbility = gBattlerAttacker;
+                gBattlescriptCurrInstr = BattleScript_TruantLoafingAround; // <- ONLY this script
+                gMoveResultFlags |= MOVE_RESULT_MISSED;
+                effect = 1;
+            }
+            gBattleStruct->atkCancellerTracker++;
+            break;
 
                 // Loafing behavior
                 CancelMultiTurnMoves(gBattlerAttacker);
