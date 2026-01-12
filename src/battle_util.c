@@ -3344,35 +3344,31 @@ u8 AtkCanceller_UnableToUseMove(void)
                 }
                 effect = 2;
             }
-            gBattleStruct->atkCancellerTracker++;
-            break;
-            case CANCELLER_TRUANT: // truant
-                if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
-                    && gDisableStructs[gBattlerAttacker].truantCounter)
+        case CANCELLER_TRUANT: // truant
+            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
+                && gDisableStructs[gBattlerAttacker].truantCounter)
+            {
+                // Heal 1/4 max HP on loafing turn
+                if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
                 {
-                    // Heal 1/4 max HP on loafing turn
-                    if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
-                    {
-                        u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4; //Heal 25% hp on rest turns 
-
-                        gBattleMoveDamage = -healAmount; // negative = heal
-                        gBattlerAbility = gBattlerAttacker;
-                        gBattlescriptCurrInstr = BattleScript_AbilityHeal;
-                        effect = 1;
-                        break; // IMPORTANT: run heal script first
-                    }
-
-                    CancelMultiTurnMoves(gBattlerAttacker);
-                    gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
-                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
+                    u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4; // 25% heal
+                    gBattleMoveDamage = -healAmount; // negative = heal
                     gBattlerAbility = gBattlerAttacker;
-                    gBattlescriptCurrInstr = BattleScript_TruantLoafingAround;
-                    gMoveResultFlags |= MOVE_RESULT_MISSED;
+                    gBattlescriptCurrInstr = BattleScript_LeftoversHeal;
                     effect = 1;
+                    break; // exit switch, run heal script
                 }
+
+                CancelMultiTurnMoves(gBattlerAttacker);
+                gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
+                gBattlerAbility = gBattlerAttacker;
+                gBattlescriptCurrInstr = BattleScript_TruantLoafingAround;
+                gMoveResultFlags |= MOVE_RESULT_MISSED;
+                effect = 1;
+            }
             gBattleStruct->atkCancellerTracker++;
             break;
-
         case CANCELLER_RECHARGE: // recharge
             if (gBattleMons[gBattlerAttacker].status2 & STATUS2_RECHARGE)
             {
