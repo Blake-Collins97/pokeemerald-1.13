@@ -2463,6 +2463,7 @@ enum
     ENDTURN_ABILITIES,
     ENDTURN_ITEMS1,
     ENDTURN_LEECH_SEED,
+    ENDTURN_TRUANT,
     ENDTURN_POISON,
     ENDTURN_BAD_POISON,
     ENDTURN_BURN,
@@ -2594,6 +2595,23 @@ u8 DoBattlerEndTurnEffects(void)
             }
             gBattleStruct->turnEffectsTracker++;
             break;
+        case ENDTURN_TRUANT:  // truant healing
+            if (gBattleMons[gActiveBattler].ability == ABILITY_TRUANT
+             && gBattleMons[gActiveBattler].hp != 0) // skip if fainted
+            {
+                gBattlerTarget = gActiveBattler; // Truant heals itself
+                gBattleMoveDamage = gBattleMons[gActiveBattler].maxHP / 8;
+                if (gBattleMoveDamage == 0)
+                    gBattleMoveDamage = 1;
+
+                gBattleScripting.animArg1 = gBattlerTarget; // HP bar anim
+                gBattleScripting.animArg2 = gBattlerTarget;
+
+                BattleScriptExecute(BattleScript_PoisonHealActivates);
+                effect++;
+            }
+            gBattleStruct->turnEffectsTracker++;
+            break;      
         case ENDTURN_POISON:  // poison
             if ((gBattleMons[gActiveBattler].status1 & STATUS1_POISON)
                 && gBattleMons[gActiveBattler].hp != 0)

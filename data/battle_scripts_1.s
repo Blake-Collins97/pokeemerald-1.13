@@ -8534,6 +8534,10 @@ BattleScript_TruantLoafingAround::
     call BattleScript_AbilityPopUp
     goto BattleScript_MoveUsedLoafingAroundMsg
 
+BattleScript_TruantEndOfTurnHeal::
+    call BattleScript_AbilityPopUp
+	goto BattleScript_PoisonHealActivates
+
 BattleScript_IgnoresAndFallsAsleep::
 	printstring STRINGID_PKMNBEGANTONAP
 	waitmessage B_WAIT_TIME_LONG
