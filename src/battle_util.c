@@ -159,7 +159,6 @@ static const u16 sWorrySeedBannedAbilities[] =
     ABILITY_RKS_SYSTEM,
     ABILITY_BATTLE_BOND,
     ABILITY_POWER_CONSTRUCT,
-    ABILITY_TRUANT,
     ABILITY_ICE_FACE,
     ABILITY_GULP_MISSILE,
 };
@@ -202,7 +201,6 @@ static const u16 sEntrainmentBannedAttackerAbilities[] =
 
 static const u16 sEntrainmentTargetSimpleBeamBannedAbilities[] =
 {
-    ABILITY_TRUANT,
     ABILITY_MULTITYPE,
     ABILITY_STANCE_CHANGE,
     ABILITY_SCHOOLING,
@@ -3345,21 +3343,10 @@ u8 AtkCanceller_UnableToUseMove(void)
                 effect = 2;
             }
 
-        case CANCELLER_TRUANT: // Truant
+        case CANCELLER_TRUANT:
             if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
                 && gDisableStructs[gBattlerAttacker].truantCounter)
             {
-                // Heal 1/4 max HP (Leftovers-style)
-                if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
-                {
-                    gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 4;
-                    if (gBattleMoveDamage == 0)
-                        gBattleMoveDamage = 1;
-
-                    gBattleMoveDamage *= -1;
-                    BattleScriptExecute(BattleScript_ItemHealHP_End2);
-                }
-
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
@@ -3371,31 +3358,18 @@ u8 AtkCanceller_UnableToUseMove(void)
             gBattleStruct->atkCancellerTracker++;
             break;
 
-        case CANCELLER_RECHARGE: // recharge
 
-            if (gBattleMons[gBattlerAttacker].status2 & STATUS2_RECHARGE)
-            {
-                gBattleMons[gBattlerAttacker].status2 &= ~(STATUS2_RECHARGE);
-                gDisableStructs[gBattlerAttacker].rechargeTimer = 0;
-                CancelMultiTurnMoves(gBattlerAttacker);
-                gBattlescriptCurrInstr = BattleScript_MoveUsedMustRecharge;
-                gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
-                effect = 1;
-            }
-            gBattleStruct->atkCancellerTracker++;
-            break;
-
-        case CANCELLER_FLINCH: // flinch
-            if (gBattleMons[gBattlerAttacker].status2 & STATUS2_FLINCHED)
-            {
-                gProtectStructs[gBattlerAttacker].flinchImmobility = TRUE;
-                CancelMultiTurnMoves(gBattlerAttacker);
-                gBattlescriptCurrInstr = BattleScript_MoveUsedFlinched;
-                gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
-                effect = 1;
-            }
-            gBattleStruct->atkCancellerTracker++;
-            break;
+                case CANCELLER_FLINCH: // flinch
+                    if (gBattleMons[gBattlerAttacker].status2 & STATUS2_FLINCHED)
+                    {
+                        gProtectStructs[gBattlerAttacker].flinchImmobility = TRUE;
+                        CancelMultiTurnMoves(gBattlerAttacker);
+                        gBattlescriptCurrInstr = BattleScript_MoveUsedFlinched;
+                        gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
+                        effect = 1;
+                    }
+                    gBattleStruct->atkCancellerTracker++;
+                    break;
 
         case CANCELLER_DISABLED: // disabled move
             if (gDisableStructs[gBattlerAttacker].disabledMove == gCurrentMove && gDisableStructs[gBattlerAttacker].disabledMove != 0)
@@ -4722,8 +4696,23 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                     }
                 }
                 break;
-            case ABILITY_TRUANT:
-                gDisableStructs[gBattlerAttacker].truantCounter ^= 1;
+            case ABILITYEFFECT_TRUANT:
+                if (gDisableStructs[battlerId].truantCounter)
+                {
+                    // Heal 1/8 max HP on loafing turn
+                    if (gBattleMons[battlerId].hp < gBattleMons[battlerId].maxHP)
+                    {
+                        gBattleMoveDamage = gBattleMons[battlerId].maxHP / 8;
+                        if (gBattleMoveDamage == 0)
+                            gBattleMoveDamage = 1;
+                        gBattleMoveDamage *= -1;
+
+                        gBattlerAbility = battlerId;
+                        BattleScriptExecute(BattleScript_ItemHealHP_End2);
+                    }
+
+                    effect++;
+                }
                 break;
             case ABILITY_BAD_DREAMS:
                 if (gBattleMons[battler].status1 & STATUS1_SLEEP
