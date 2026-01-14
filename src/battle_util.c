@@ -3360,7 +3360,6 @@ u8 AtkCanceller_UnableToUseMove(void)
 
                 gBattleMoveDamage *= -1;
                 BattleScriptExecute(BattleScript_ItemHealHP_End2);
-                effect = ITEM_HP_CHANGE;
             }
 
             CancelMultiTurnMoves(gBattlerAttacker);
