@@ -3347,7 +3347,6 @@ u8 AtkCanceller_UnableToUseMove(void)
 
         case CANCELLER_TRUANT: // Truant
 
-        case CANCELLER_TRUANT: // Truant
     if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
         && gDisableStructs[gBattlerAttacker].truantCounter)
     {
