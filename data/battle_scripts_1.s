@@ -8529,9 +8529,16 @@ BattleScript_MoveUsedLoafingAroundMsg::
 	waitmessage B_WAIT_TIME_LONG
 	moveendto MOVEEND_NEXT_TARGET
 	end	
+
 BattleScript_TruantLoafingAround::
-	call BattleScript_AbilityPopUp
-	goto BattleScript_MoveUsedLoafingAroundMsg
+    call BattleScript_AbilityPopUp
+
+    setbyte sBATTLER, gBattlerAbility
+    playanimation sBATTLER, B_ANIM_HEALING, NULL
+    healthbarupdate sBATTLER
+    datahpupdate sBATTLER
+
+    goto BattleScript_MoveUsedLoafingAroundMsg
 
 BattleScript_IgnoresAndFallsAsleep::
 	printstring STRINGID_PKMNBEGANTONAP
