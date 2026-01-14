@@ -8529,38 +8529,16 @@ BattleScript_MoveUsedLoafingAroundMsg::
 	waitmessage B_WAIT_TIME_LONG
 	moveendto MOVEEND_NEXT_TARGET
 	end	
-BattleScript_TruantLoafingAround::  ; Replaces the old Truant script
 
-    call BattleScript_AbilityPopUp       ; Show the ability pop-up
+BattleScript_TruantLoafingAround::
+    call BattleScript_AbilityPopUp
 
-    setbyte sBATTLER, gBattlerAbility    ; Set battler for animation
-
-    ; Heal 1/4 max HP if not full
-    mov sHPBattler, sBATTLER
-    mov r0, gBattleMons[sHPBattler].hp
-    mov r1, gBattleMons[sHPBattler].maxHP
-    cmp r0, r1
-    bge .NoHeal                          ; Skip healing if HP full
-
-    ; Play healing animation
+    setbyte sBATTLER, gBattlerAbility
     playanimation sBATTLER, B_ANIM_HEALING, NULL
-
-    ; Heal 25% of max HP
-    mov r2, gBattleMons[sHPBattler].maxHP
-    lsr r2, r2, #2                       ; Divide by 4
-    add gBattleMons[sHPBattler].hp, r2
-    cmp gBattleMons[sHPBattler].hp, gBattleMons[sHPBattler].maxHP
-    ble .UpdateHP
-    mov gBattleMons[sHPBattler].hp, gBattleMons[sHPBattler].maxHP
-
-.UpdateHP:
     healthbarupdate sBATTLER
     datahpupdate sBATTLER
 
-.NoHeal:
-    ; Original loafing-around logic
     goto BattleScript_MoveUsedLoafingAroundMsg
-	end
 
 BattleScript_IgnoresAndFallsAsleep::
 	printstring STRINGID_PKMNBEGANTONAP

@@ -3344,22 +3344,22 @@ u8 AtkCanceller_UnableToUseMove(void)
                 }
                 effect = 2;
             }
-        case CANCELLER_TRUANT: // truant
-
-            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT && gDisableStructs[gBattlerAttacker].truantCounter)
+        ccase CANCELLER_TRUANT: // Truant
+            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
+                && gDisableStructs[gBattlerAttacker].truantCounter)
             {
-                CancelMultiTurnMoves(gBattlerAttacker);
-                gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
-                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
-                gBattlerAbility = gBattlerAttacker;
-                gBattlescriptCurrInstr = BattleScript_TruantLoafingAround; // <- ONLY this script
-                gMoveResultFlags |= MOVE_RESULT_MISSED;
-                effect = 1;
-            }
-            gBattleStruct->atkCancellerTracker++;
-            break;
+                // Heal 1/4 max HP on loafing turns
+                if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
+                {
+                    u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4;
+                    if (healAmount == 0)
+                        healAmount = 1;
 
-                // Loafing behavior
+                    gBattleMons[gBattlerAttacker].hp += healAmount;
+                    if (gBattleMons[gBattlerAttacker].hp > gBattleMons[gBattlerAttacker].maxHP)
+                        gBattleMons[gBattlerAttacker].hp = gBattleMons[gBattlerAttacker].maxHP;
+                }
+
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
@@ -3367,8 +3367,10 @@ u8 AtkCanceller_UnableToUseMove(void)
                 gBattlescriptCurrInstr = BattleScript_TruantLoafingAround;
                 gMoveResultFlags |= MOVE_RESULT_MISSED;
                 effect = 1;
+            }
             gBattleStruct->atkCancellerTracker++;
-    break;
+            break;
+
 
         case CANCELLER_RECHARGE: // recharge
 
