@@ -8532,12 +8532,6 @@ BattleScript_MoveUsedLoafingAroundMsg::
 
 BattleScript_TruantLoafingAround::
     call BattleScript_AbilityPopUp
-
-    setbyte sBATTLER, gBattlerAbility
-    playanimation sBATTLER, B_ANIM_HEALING, NULL
-    healthbarupdate sBATTLER
-    datahpupdate sBATTLER
-
     goto BattleScript_MoveUsedLoafingAroundMsg
 
 BattleScript_IgnoresAndFallsAsleep::

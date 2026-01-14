@@ -3346,31 +3346,30 @@ u8 AtkCanceller_UnableToUseMove(void)
             }
 
         case CANCELLER_TRUANT: // Truant
-
-    if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
-        && gDisableStructs[gBattlerAttacker].truantCounter)
-    {
-        // Heal 1/4 max HP (Leftovers-style)
-            if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
+            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
+                && gDisableStructs[gBattlerAttacker].truantCounter)
             {
-                gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 8;
-                if (gBattleMoveDamage == 0)
-                    gBattleMoveDamage = 1;
+                // Heal 1/4 max HP (Leftovers-style)
+                if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
+                {
+                    gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 4;
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = 1;
 
-                gBattleMoveDamage *= -1;
-                BattleScriptExecute(BattleScript_ItemHealHP_End2);
+                    gBattleMoveDamage *= -1;
+                    BattleScriptExecute(BattleScript_ItemHealHP_End2);
+                }
+
+                CancelMultiTurnMoves(gBattlerAttacker);
+                gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
+                gBattlerAbility = gBattlerAttacker;
+                gBattlescriptCurrInstr = BattleScript_TruantLoafingAround;
+                gMoveResultFlags |= MOVE_RESULT_MISSED;
+                effect = 1;
             }
-
-            CancelMultiTurnMoves(gBattlerAttacker);
-            gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
-            gBattlerAbility = gBattlerAttacker;
-            gBattlescriptCurrInstr = BattleScript_TruantLoafingAround;
-            gMoveResultFlags |= MOVE_RESULT_MISSED;
-            effect = 1;
-        }
-        gBattleStruct->atkCancellerTracker++;
-        break;
+            gBattleStruct->atkCancellerTracker++;
+            break;
 
         case CANCELLER_RECHARGE: // recharge
 
