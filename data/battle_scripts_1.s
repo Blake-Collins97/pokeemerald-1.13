@@ -8560,6 +8560,7 @@ BattleScript_TruantLoafingAround::  ; Replaces the old Truant script
 .NoHeal:
     ; Original loafing-around logic
     goto BattleScript_MoveUsedLoafingAroundMsg
+	end
 
 BattleScript_IgnoresAndFallsAsleep::
 	printstring STRINGID_PKMNBEGANTONAP
