@@ -4724,24 +4724,6 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                     }
                 }
                 break;
-            case ABILITYEFFECT_TRUANT:
-                if (gDisableStructs[battlerId].truantCounter)
-                {
-                    // Heal 1/8 max HP on loafing turn
-                    if (gBattleMons[battlerId].hp < gBattleMons[battlerId].maxHP)
-                    {
-                        gBattleMoveDamage = gBattleMons[battlerId].maxHP / 8;
-                        if (gBattleMoveDamage == 0)
-                            gBattleMoveDamage = 1;
-                        gBattleMoveDamage *= -1;
-
-                        gBattlerAbility = battlerId;
-                        BattleScriptExecute(BattleScript_ItemHealHP_End2);
-                    }
-
-                    effect++;
-                }
-                break;
             case ABILITY_BAD_DREAMS:
                 if (gBattleMons[battler].status1 & STATUS1_SLEEP
                     || gBattleMons[BATTLE_OPPOSITE(battler)].status1 & STATUS1_SLEEP

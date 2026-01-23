@@ -64,14 +64,13 @@ static void ApplyGymLeaderBattleRules(u16 trainerId)
 {
     switch (trainerId)
     {
-    case TRAINER_ROXANNE:
+    case TRAINER_ROXANNE_1:
         // Singles battle, player selects 3 Pokémon
         gBattleTypeFlags |= BATTLE_TYPE_FRONTIER;
         gBattleStruct->partySize = 3;
         break;
     }
 }
-
 
 enum
 {
