@@ -2459,6 +2459,7 @@ static const struct TrainerMonItemCustomMoves sParty_Marc[] = { // Rustboro Gym
     }
 };
 
+// This is a 3x3 battle as defined in battle_setup.c
 static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     {
     .lvl = -2,
