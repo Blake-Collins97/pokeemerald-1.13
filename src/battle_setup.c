@@ -47,31 +47,7 @@
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
 
-// --- Custom Gym Leader Battle Rules Helpers ---
-
-static bool32 ShouldUseCustomGymRules(u16 trainerId)
-{
-    switch (trainerId)
-    {
-    case TRAINER_ROXANNE_1:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-static void ApplyGymLeaderBattleRules(u16 trainerId)
-{
-    switch (trainerId)
-    {
-    case TRAINER_ROXANNE_1:
-        // Singles battle, player selects 3 Pokémon
-        gBattleTypeFlags |= BATTLE_TYPE_FRONTIER;
-        gBattleStruct->partySize = 3;
-        break;
-    }
-}
-
+=======
 enum
 {
     TRAINER_PARAM_LOAD_VAL_8BIT,
@@ -1340,17 +1316,6 @@ void BattleSetup_StartTrainerBattle(void)
         gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
-    // --- Custom Gym Leader Rules ---
-    if (ShouldUseCustomGymRules(gTrainerBattleOpponent_A))
-        ApplyGymLeaderBattleRules(gTrainerBattleOpponent_A);
-    // Roxanne 3v3 code     
-    if (gTrainerBattleOpponent_A == TRAINER_ROXANNE_1)
-{
-    sSavedPlayerPartyCount = gPlayerPartyCount;
-
-    if (gPlayerPartyCount > 3)
-        gPlayerPartyCount = 3;
-}   
 
     if (InBattlePyramid())
     {
