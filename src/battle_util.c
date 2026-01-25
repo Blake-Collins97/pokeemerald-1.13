@@ -2594,24 +2594,7 @@ u8 DoBattlerEndTurnEffects(void)
                 effect++;
             }
             gBattleStruct->turnEffectsTracker++;
-            break;
-        case ENDTURN_TRUANT:  // truant healing
-            if (gBattleMons[gActiveBattler].ability == ABILITY_TRUANT
-             && gBattleMons[gActiveBattler].hp != 0) // skip if fainted
-            {
-                gBattlerTarget = gActiveBattler; // Truant heals itself
-                gBattleMoveDamage = gBattleMons[gActiveBattler].maxHP / 8;
-                if (gBattleMoveDamage == 0)
-                    gBattleMoveDamage = 1;
-
-                gBattleScripting.animArg1 = gBattlerTarget; // HP bar anim
-                gBattleScripting.animArg2 = gBattlerTarget;
-
-                BattleScriptExecute(BattleScript_PoisonHealActivates);
-                effect++;
-            }
-            gBattleStruct->turnEffectsTracker++;
-            break;      
+            break;  
         case ENDTURN_POISON:  // poison
             if ((gBattleMons[gActiveBattler].status1 & STATUS1_POISON)
                 && gBattleMons[gActiveBattler].hp != 0)
@@ -3360,22 +3343,9 @@ u8 AtkCanceller_UnableToUseMove(void)
                 }
                 effect = 2;
             }
-
-        case CANCELLER_TRUANT: // Truant
-            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
-                && gDisableStructs[gBattlerAttacker].truantCounter)
+        case CANCELLER_TRUANT: // truant
+            if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT && gDisableStructs[gBattlerAttacker].truantCounter)
             {
-                // Heal 1/4 max HP on loafing turn (NO script call)
-                if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
-                {
-                    u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4;
-                    if (healAmount == 0)
-                        healAmount = 1;
-                    gBattleMons[gBattlerAttacker].hp += healAmount;
-                    if (gBattleMons[gBattlerAttacker].hp > gBattleMons[gBattlerAttacker].maxHP)
-                        gBattleMons[gBattlerAttacker].hp = gBattleMons[gBattlerAttacker].maxHP;
-                }
-
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
@@ -3384,9 +3354,6 @@ u8 AtkCanceller_UnableToUseMove(void)
                 gMoveResultFlags |= MOVE_RESULT_MISSED;
                 effect = 1;
             }
-            gBattleStruct->atkCancellerTracker++;
-            break;
-
         case CANCELLER_FLINCH: // flinch
             if (gBattleMons[gBattlerAttacker].status2 & STATUS2_FLINCHED)
             {
@@ -3398,7 +3365,6 @@ u8 AtkCanceller_UnableToUseMove(void)
             }
             gBattleStruct->atkCancellerTracker++;
             break;
-
         case CANCELLER_DISABLED: // disabled move
             if (gDisableStructs[gBattlerAttacker].disabledMove == gCurrentMove && gDisableStructs[gBattlerAttacker].disabledMove != 0)
             {
