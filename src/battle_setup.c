@@ -47,7 +47,6 @@
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
 
-=======
 enum
 {
     TRAINER_PARAM_LOAD_VAL_8BIT,
