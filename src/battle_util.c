@@ -3365,16 +3365,17 @@ u8 AtkCanceller_UnableToUseMove(void)
             if (GetBattlerAbility(gBattlerAttacker) == ABILITY_TRUANT
                 && gDisableStructs[gBattlerAttacker].truantCounter)
             {
-                // Heal 1/4 max HP on loafing turn (NO script call)
-                if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
-                {
-                    u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4;
-                    if (healAmount == 0)
-                        healAmount = 1;
-                    gBattleMons[gBattlerAttacker].hp += healAmount;
-                    if (gBattleMons[gBattlerAttacker].hp > gBattleMons[gBattlerAttacker].maxHP)
-                        gBattleMons[gBattlerAttacker].hp = gBattleMons[gBattlerAttacker].maxHP;
-                }
+                 // Heal 1/4 max HP on loafing turn (NO script call)
+                
+                //  if (gBattleMons[gBattlerAttacker].hp < gBattleMons[gBattlerAttacker].maxHP)
+                // {
+                //     u16 healAmount = gBattleMons[gBattlerAttacker].maxHP / 4;
+                //     if (healAmount == 0)
+                //         healAmount = 1;
+                //     gBattleMons[gBattlerAttacker].hp += healAmount;
+                //     if (gBattleMons[gBattlerAttacker].hp > gBattleMons[gBattlerAttacker].maxHP)
+                //         gBattleMons[gBattlerAttacker].hp = gBattleMons[gBattlerAttacker].maxHP;
+                // }
 
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
